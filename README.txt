@@ -1,2 +1,2 @@
 Hello
-papiez pedal dzieci jebal //kuba
+to jest moja nowa linia kuba
