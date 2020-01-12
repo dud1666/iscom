@@ -2,19 +2,59 @@
 //
 
 #include <iostream>
+#include <string>
+#ifdef WIN32
+#include <windows.h>
+#else
+#include <termios.h>
+#include <unistd.h>
+#endif
+
+void SetStdinEcho(bool enable = true)
+{
+#ifdef WIN32
+    HANDLE hStdin = GetStdHandle(STD_INPUT_HANDLE);
+    DWORD mode;
+    GetConsoleMode(hStdin, &mode);
+
+    if (!enable)
+        mode &= ~ENABLE_ECHO_INPUT;
+    else
+        mode |= ENABLE_ECHO_INPUT;
+
+    SetConsoleMode(hStdin, mode);
+
+#else
+    struct termios tty;
+    tcgetattr(STDIN_FILENO, &tty);
+    if (!enable)
+        tty.c_lflag &= ~ECHO;
+    else
+        tty.c_lflag |= ECHO;
+
+    (void)tcsetattr(STDIN_FILENO, TCSANOW, &tty);
+#endif
+}
+
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::string login;
+  
+    std::cout << "Witaj w IsCom!\n";
+    std::cout << "Podaj login:\n";
+    std::cin >> login;
+
+    std::cout << "Podaj haslo:\n";
+    SetStdinEcho(false);
+
+    std::string password;
+    std::cin >> password;
+
+    SetStdinEcho(true);
+
+    return 0;
+
 }
 
-// Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
-// Debugowanie programu: F5 lub menu Debugowanie > Rozpocznij debugowanie
-
-// Porady dotyczące rozpoczynania pracy:
-//   1. Użyj okna Eksploratora rozwiązań, aby dodać pliki i zarządzać nimi
-//   2. Użyj okna programu Team Explorer, aby nawiązać połączenie z kontrolą źródła
-//   3. Użyj okna Dane wyjściowe, aby sprawdzić dane wyjściowe kompilacji i inne komunikaty
-//   4. Użyj okna Lista błędów, aby zobaczyć błędy
-//   5. Wybierz pozycję Projekt > Dodaj nowy element, aby utworzyć nowe pliki kodu, lub wybierz pozycję Projekt > Dodaj istniejący element, aby dodać istniejące pliku kodu do projektu
-//   6. Aby w przyszłości ponownie otworzyć ten projekt, przejdź do pozycji Plik > Otwórz > Projekt i wybierz plik sln
