@@ -9,6 +9,7 @@
 #include <termios.h>
 #include <unistd.h>
 #endif
+#include "Core.h"
 
 void SetStdinEcho(bool enable = true)
 {

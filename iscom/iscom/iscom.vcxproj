@@ -147,7 +147,35 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Admin.cpp" />
+    <ClCompile Include="Date.cpp" />
+    <ClCompile Include="Group.cpp" />
+    <ClCompile Include="GroupHandler.cpp" />
+    <ClCompile Include="Handler.cpp" />
     <ClCompile Include="iscom.cpp" />
+    <ClCompile Include="MessageHandler.cpp" />
+    <ClCompile Include="Message.cpp" />
+    <ClCompile Include="Mod.cpp" />
+    <ClCompile Include="Picture.cpp" />
+    <ClCompile Include="User.cpp" />
+    <ClCompile Include="UserHandler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Admin.h" />
+    <ClInclude Include="Core.h" />
+    <ClInclude Include="Date.h" />
+    <ClInclude Include="Group.h" />
+    <ClInclude Include="GroupHandler.h" />
+    <ClInclude Include="Handler.h" />
+    <ClInclude Include="MessageHandler.h" />
+    <ClInclude Include="Message.h" />
+    <ClInclude Include="Mod.h" />
+    <ClInclude Include="Picture.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="UserHandler.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="iscom.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
