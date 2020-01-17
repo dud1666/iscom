@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\iscom",
+    "\\iscom\\iscom"
   ],
+  "SelectedNode": "\\iscom\\iscom\\iscom.cpp",
   "PreviewInSolutionExplorer": false
 }

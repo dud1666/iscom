@@ -11,6 +11,7 @@
 #endif
 #include "Core.h"
 
+
 void SetStdinEcho(bool enable = true)
 {
 #ifdef WIN32
@@ -39,8 +40,19 @@ void SetStdinEcho(bool enable = true)
 
 
 
+void tests() {
+
+}
+
 int main()
 {
+	bool test = false;
+
+	if (test) {
+		tests();
+	}
+
+
     std::string login;
   
     std::cout << "Witaj w IsCom!\n";

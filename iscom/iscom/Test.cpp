@@ -73,7 +73,7 @@ bool testAddUser() {
 	}
 }
 
-bool testRemoveUser() {
+bool testModRemoveUser() {
 	if (Mod::removeUser(value) == result) {
 		return true;
 	}
@@ -142,7 +142,7 @@ bool testGetUser() {
 	}
 }
 
-bool testRemoveUser() {
+bool testHandlerRemoveUser() {
 	if (UserHandler::removeUser(value) == result) {
 		return true;
 	}

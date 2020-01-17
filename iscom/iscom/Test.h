@@ -29,7 +29,7 @@ class Test
 
 	bool testChangeGroupName();
 	bool testAddUser();
-	bool testRemoveUser();
+	bool testModRemoveUser();
 
 
 	//metody dla klasy User
@@ -43,7 +43,7 @@ class Test
 
 	//metody dla klasy UserHandler
 	bool testGetUser();
-	bool testRemoveUser();
+	bool testHandlerRemoveUser();
 	bool testUpdateUser();
 
 
