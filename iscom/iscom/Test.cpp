@@ -20,7 +20,7 @@ static bool Test::testRemoveMod() {
 		return false;
 	}
 }
-*/
+
 
 //metody dla klasy MessageHandler
 
