@@ -43,79 +43,81 @@ void SetStdinEcho(bool enable = true)
 
 void tests() {
 
+	Test test = new Test;
+
 	//testy dla metod z klasy Admin
 
-	if (!Test::testAddMod()) {
-		std::cout << Test::testAddMod() << std::endl;
+	if (!test.testAddMod()) {
+		std::cout << test.testAddMod() << std::endl;
 	}
-	if (!Test::testRemoveMod()) {
-		std::cout << Test::testRemoveMod() << std::endl;
+	if (!test.testRemoveMod()) {
+		std::cout << test.testRemoveMod() << std::endl;
 	}
 
 	//testy dla metod z klasy Handler
 
-	if (!Test::testGet()) {
-		std::cout << Test::testGet() << std::endl;
+	if (!test.testGet()) {
+		std::cout << test.testGet() << std::endl;
 	}
-	if (!Test::testAdd()) {
-		std::cout << Test::testAdd() << std::endl;
+	if (!test.testAdd()) {
+		std::cout << test.testAdd() << std::endl;
 	}
-	if (!Test::testRemove()) {
-		std::cout << Test::testRemove() << std::endl;
+	if (!test.testRemove()) {
+		std::cout << test.testRemove() << std::endl;
 	}
 
 	//testy dla metod z klasy MessageHandler
 
-	if (!Test::testGetMessageByDate()) {
-		std::cout << Test::testGetMessageByDate() << std::endl;
+	if (!test.testGetMessageByDate()) {
+		std::cout << test.testGetMessageByDate() << std::endl;
 	}
-	if (!Test::testAddMessage()) {
-		std::cout << Test::testAddMessage() << std::endl;
+	if (!test.testAddMessage()) {
+		std::cout << test.testAddMessage() << std::endl;
 	}
-	if (!Test::testRemoveMessage()) {
-		std::cout << Test::testRemoveMessage() << std::endl;
+	if (!test.testRemoveMessage()) {
+		std::cout << test.testRemoveMessage() << std::endl;
 	}
 
 	//testy dla metod z klasy Mod
 
-	if (!Test::testChangeGroupName()) {
-		std::cout << Test::testChangeGroupName() << std::endl;
+	if (!test.testChangeGroupName()) {
+		std::cout << test.testChangeGroupName() << std::endl;
 	}
-	if (!Test::testAddUser()) {
-		std::cout << Test::testAddUser() << std::endl;
+	if (!test.testAddUser()) {
+		std::cout << test.testAddUser() << std::endl;
 	}
-	if (!Test::testModRemoveUser()) {
-		std::cout << Test::testModRemoveUser() << std::endl;
+	if (!test.testModRemoveUser()) {
+		std::cout << test.testModRemoveUser() << std::endl;
 	}
 
 	//testy dla metod z klasy User
 
-	if (!Test::testCreateGroup()) {
-		std::cout << Test::testCreateGroup() << std::endl;
+	if (!test.testCreateGroup()) {
+		std::cout << test.testCreateGroup() << std::endl;
 	}
-	if (!Test::testAddFriend()) {
-		std::cout << Test::testAddFriend() << std::endl;
+	if (!test.testAddFriend()) {
+		std::cout << test.testAddFriend() << std::endl;
 	}
-	if (!Test::testRemoveFriend()) {
-		std::cout << Test::testRemoveFriend() << std::endl;
+	if (!test.testRemoveFriend()) {
+		std::cout << test.testRemoveFriend() << std::endl;
 	}
-	if (!Test::testActualiseDescription()) {
-		std::cout << Test::testActualiseDescription() << std::endl;
+	if (!test.testActualiseDescription()) {
+		std::cout << test.testActualiseDescription() << std::endl;
 	}
-	if (!Test::testActualiseProfilPicture()) {
-		std::cout << Test::testActualiseProfilPicture() << std::endl;
+	if (!test.testActualiseProfilPicture()) {
+		std::cout << test.testActualiseProfilPicture() << std::endl;
 	}
 
 	//testy dla metod z klasy UserHandler
 
-	if (!Test::testGetUser()) {
-		std::cout << Test::testGetUser() << std::endl;
+	if (!test.testGetUser()) {
+		std::cout << test.testGetUser() << std::endl;
 	}
-	if (!Test::testHandlerRemoveUser()) {
-		std::cout << Test::testHandlerRemoveUser() << std::endl;
+	if (!test.testHandlerRemoveUser()) {
+		std::cout << test.testHandlerRemoveUser() << std::endl;
 	}
-	if (!Test::testUpdateUser()) {
-		std::cout << Test::testUpdateUser() << std::endl;
+	if (!test.testUpdateUser()) {
+		std::cout << test.testUpdateUser() << std::endl;
 	}
 }
 

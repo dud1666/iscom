@@ -12,42 +12,42 @@ public:
 
 	//metody dla klasy Admin
 
-	static bool testAddMod();
-	static bool testRemoveMod();
+	 bool testAddMod();
+	 bool testRemoveMod();
 
 	//metody dla klasy Handler
 
-	static bool testGet();
-	static bool testAdd();
-	static bool testRemove();
+	 bool testGet();
+	 bool testAdd();
+	 bool testRemove();
 
 	//metody dla klasy MessageHandler
 
-	static bool testGetMessageByDate();
-	static bool testAddMessage();
-	static bool testRemoveMessage();
+	 bool testGetMessageByDate();
+	 bool testAddMessage();
+	 bool testRemoveMessage();
 
 
 	//metody dla klasy Mod
 
-	static bool testChangeGroupName();
-	static bool testAddUser();
-	static bool testModRemoveUser();
+	 bool testChangeGroupName();
+	 bool testAddUser();
+	 bool testModRemoveUser();
 
 
 	//metody dla klasy User
 
-	static bool testCreateGroup();
-	static bool testAddFriend();
-	static bool testRemoveFriend();
-	static bool testActualiseDescription();
-	static bool testActualiseProfilPicture();
+	 bool testCreateGroup();
+	 bool testAddFriend();
+	 bool testRemoveFriend();
+	 bool testActualiseDescription();
+	 bool testActualiseProfilPicture();
 
 
 	//metody dla klasy UserHandler
-	static bool testGetUser();
-	static bool testHandlerRemoveUser();
-	static bool testUpdateUser();
+	 bool testGetUser();
+	 bool testHandlerRemoveUser();
+	s bool testUpdateUser();
 
 
 };
