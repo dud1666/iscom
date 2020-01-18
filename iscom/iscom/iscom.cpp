@@ -68,52 +68,52 @@ void tests() {
 	*/
 	//testy dla metod z klasy MessageHandler
 
-	if (!test.testGetMessageByDate()) {
+	if (test.testGetMessageByDate() != "OK") {
 		std::cout << test.testGetMessageByDate() << std::endl;
 	}
-	if (!test.testAddMessage()) {
+	if (test.testAddMessage() != "OK") {
 		std::cout << test.testAddMessage() << std::endl;
 	}
-	if (!test.testRemoveMessage()) {
+	if (test.testRemoveMessage() != "OK") {
 		std::cout << test.testRemoveMessage() << std::endl;
 	}
 
 	//testy dla metod z klasy Mod
 
-	if (!test.testChangeGroupName()) {
+	if (test.testChangeGroupName() != "OK") {
 		std::cout << test.testChangeGroupName() << std::endl;
 	}
-	if (!test.testAddUser()) {
+	if (test.testAddUser() != "OK") {
 		std::cout << test.testAddUser() << std::endl;
 	}
-	if (!test.testModRemoveUser()) {
+	if (test.testModRemoveUser() != "OK") {
 		std::cout << test.testModRemoveUser() << std::endl;
 	}
 
 	//testy dla metod z klasy User
 
-	if (!test.testCreateGroup()) {
+	if (test.testCreateGroup() != "OK") {
 		std::cout << test.testCreateGroup() << std::endl;
 	}
-	if (!test.testAddFriend()) {
+	if (test.testAddFriend() != "OK") {
 		std::cout << test.testAddFriend() << std::endl;
 	}
-	if (!test.testRemoveFriend()) {
+	if (test.testRemoveFriend() != "OK") {
 		std::cout << test.testRemoveFriend() << std::endl;
 	}
-	if (!test.testActualiseDescription()) {
+	if (test.testActualiseDescription() != "OK") {
 		std::cout << test.testActualiseDescription() << std::endl;
 	}
 	
 	//testy dla metod z klasy UserHandler
 
-	if (!test.testGetUser()) {
+	if (test.testGetUser() != "OK") {
 		std::cout << test.testGetUser() << std::endl;
 	}
-	if (!test.testHandlerRemoveUser()) {
+	if (test.testHandlerRemoveUser() != "OK") {
 		std::cout << test.testHandlerRemoveUser() << std::endl;
 	}
-	if (!test.testUpdateUser()) {
+	if (test.testUpdateUser() != "OK") {
 		std::cout << test.testUpdateUser() << std::endl;
 	}
 }
