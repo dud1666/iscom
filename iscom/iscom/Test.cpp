@@ -6,10 +6,10 @@
  std::string Test::testAddMod(){
 	std::string value = "0";
 	std::string expected = "0";
-	Admin a;
+	Admin testAdmin;
 
-	std::string result = a.addMod(value);
-	if (a.addMod(value) == result) {
+	std::string result = testAdmin.addMod(value);
+	if (expected == result) {
 		return "OK";
 	}
 	else {
@@ -18,13 +18,16 @@
 }
 
  std::string Test::testRemoveMod() {
-	 std::string value = 0;
-	 std::string result = 0;
-	if (Admin::removeMod(value) == result) {
-		return true;
+	 std::string value = "0";
+	 std::string expected = "0";
+	 Admin testAdmin;
+
+	 std::string result = testAdmin.removeMod(value);
+	if (expected == result) {
+		return "OK";
 	}
 	else {
-		return false;
+		return result;
 	}
 }
 
@@ -32,37 +35,46 @@
 //metody dla klasy MessageHandler
 
  std::string Test::testGetMessageByDate() {
+	 MessageHandler testMessageHandler;
 	 Date value = Date();
 	 Date value1 = Date();
-	 Message result = Message();
-	if (MessageHandler::getMessageByDate(value,value1) == result) {
-		return true;
+	 std::string expected = std::string();
+
+	 std::string result = testMessageHandler.getMessageByDate(value, value1);
+	if (expected == result) {
+		return "OK";
 	}
 	else {
-		return false;
+		return result;
 	}
 }
 
  std::string Test::testAddMessage() {
+	 MessageHandler testMessageHandler;
 	 std::string value = std::string();
 	 std::string value1 = std::string();
-	 long result = 0;
-	if (MessageHandler::addMessage(value,value1) == result) {
-		return true;
+	 std::string expected = 0;
+
+	 std::string result = testMessageHandler.addMessage(value, value1);
+	if (expected == result) {
+		return "OK";
 	}
 	else {
-		return false;
+		return result;
 	}
 }
 
  std::string Test::testRemoveMessage() {
+	 MessageHandler testMessageHandler;
 	 std::string value = std::string();
-	 std::string result = false;
-	if (MessageHandler::Message(value) == result) {
-		return true;
+	 std::string expected = std::string();
+
+	 std::string result = testMessageHandler.removeMessage(value);
+	if (expected == result) {
+		return "OK";
 	}
 	else {
-		return false;
+		return result;
 	}
 }
 
@@ -70,38 +82,46 @@
 //metody dla klasy Mod
 
  std::string Test::testChangeGroupName() {
+	 Mod testMod;
 	 std::string value = std::string();
 	 std::string value1 = std::string();
-	 std::string result = std::string();
-	if (Mod::changeGroupName(value,value1) == result) {
-		return true;
+	 std::string expected = std::string();
+
+	 std::string result = testMod.changeGroupName(value, value1);
+	if (expected == result) {
+		return "OK";
 	}
 	else {
-		return false;
+		return result;
 	}
 }
 
  std::string Test::testAddUser() {
+	 Mod testMod;
 	 std::string value = std::string();
 	 std::string value1 = std::string();
-	 User result = User();
-	if (Mod::addUser(value, value1) == result) {
-		return true;
+	 std::string expected = std::string();
+
+	 std::string result = testMod.addUser(value, value1);
+	if (expected == result) {
+		return "OK";
 	}
 	else {
-		return false;
+		return result;
 	}
 }
 
  std::string Test::testModRemoveUser() {
+	 Mod testMod;
 	 std::string value = std::string();
 	 std::string value1 = std::string();
-	 User result = User();
-	if (Mod::removeUser(value, value1) == result) {
-		return true;
+	 std::string expected = std::string();
+	 std::string result = testMod.removeUser(value, value1);
+	if (expected == result) {
+		return "OK";
 	}
 	else {
-		return false;
+		return result;
 	}
 }
 
@@ -109,45 +129,52 @@
 //metody dla klasy User
 
  std::string Test::testCreateGroup() {
-	 Group result = Group();
-	if (User::createGroup() == result) {
-		return true;
-	}
-	else {
-		return false;
+	 User testUser;
+	 std::string expected = std::string();
+	 std::string result = testUser.createGroup();
+	if (expected == result) {
+		return "OK";
+	}else {
+		return result;
 	}
 }
 
  std::string Test::testAddFriend() {
+	 User testUser;
 	 std::string value = std::string();
-	 User result = User();
-	if (User::addFriend(value) == result) {
-		return true;
+	 std::string expected = std::string();
+	 std::string result = testUser.addFriend(value);
+	if (expected == result) {
+		return "OK";
 	}
 	else {
-		return false;
+		return result;
 	}
 }
 
  std::string Test::testRemoveFriend() {
+	 User testUser;
 	 std::string value = std::string();
-	 User result = User();
-	if (User::removeFriend(value) == result) {
-		return true;
+	 std::string expected = std::string();
+	 std::string result = testUser.removeFriend(value);
+	if (expected == result) {
+		return "OK";
 	}
 	else {
-		return false;
+		return result;
 	}
 }
 
  std::string Test::testActualiseDescription() {
+	 User testUser;
 	 std::string value = std::string();
-	 std::string result = false;
-	if (User::actualiseDescription(value) == result) {
-		return true;
+	 std::string expected = std::string();
+	 std::string result = testUser.actualiseDescription(value);
+	if (expected == result) {
+		return "OK";
 	}
 	else {
-		return false;
+		return result;
 	}
 }
 
@@ -157,35 +184,41 @@
 //metody dla klasy UserHandler
 
  std::string Test::testGetUser() {
+	 UserHandler testUserHandler;
 	 std::string value = std::string();
-	 Uaer result = User();
-	if (UserHandler::getUser(value) == result) {
-		return true;
+	 std::string expected = std::string();
+	 std::string result = testUserHandler.getUser(value);
+	if (expected == result) {
+		return "OK";
 	}
 	else {
-		return false;
+		return result;
 	}
 }
 
  std::string Test::testHandlerRemoveUser() {
+	 UserHandler testUserHandler;
 	 std::string value = std::string();
-	 std::string result = std::string();
-	if (UserHandler::removeUser(value) == result) {
-		return true;
+	 std::string expected = std::string();
+	 std::string result = testUserHandler.removeUser(value);
+	if (expected == result) {
+		return "OK";
 	}
 	else {
-		return false;
+		return result;
 	}
 }
 
  std::string Test::testUpdateUser() {
+	 UserHandler testUserHandler;
 	 std::string value = std::string();
-	 User result = User();
-	if (UserHandler::updateUser(value) == result) {
-		return true;
+	 std::string expected = std::string();
+	 std::string result = testUserHandler.updateUser(value);
+	if (expected == result) {
+		return "OK";
 	}
 	else {
-		return false;
+		return result;
 	}
 }
 
@@ -195,28 +228,28 @@
 
  std::string Test::testGet() {
 	if (Handler::get(value, value1) == result) {
-		return true;
+		return "OK";
 	}
 	else {
-		return false;
+		return result;
 	}
 }
 
  std::string Test::testAdd() {
 	if (Handler::add(value, value1, value_tab) == result) {
-		return true;
+		return "OK";
 	}
 	else {
-		return false;
+		return result;
 	}
 }
 
  std::string Test::testRemove() {
 	if (Handler::remove(value) == result) {
-		return true;
+		return "OK";
 	}
 	else {
-		return false;
+		return result;
 	}
 }
  */
