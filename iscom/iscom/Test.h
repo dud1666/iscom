@@ -4,12 +4,6 @@
 class Test
 {
 public:
-	template <class T>
-	T value;
-	T value1;
-	T value_tab;
-	T result;
-
 	//metody dla klasy Admin
 
 	 bool testAddMod();
@@ -47,7 +41,7 @@ public:
 	//metody dla klasy UserHandler
 	 bool testGetUser();
 	 bool testHandlerRemoveUser();
-	s bool testUpdateUser();
+	 bool testUpdateUser();
 
 
 };
