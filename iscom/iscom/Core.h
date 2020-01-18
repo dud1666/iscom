@@ -1,5 +1,5 @@
 #pragma once
-
+#include "nlohmann/json.hpp"
 #include "User.h"
 #include "Mod.h"
 #include "Admin.h"
