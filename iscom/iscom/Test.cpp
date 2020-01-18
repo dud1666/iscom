@@ -1,20 +1,21 @@
 #pragma once
 #include "Test.h"
+#include "Core.h"
 
 //metody dla klasy Admin
-
- bool Test::testAddMod(){
-	 int value = 0;
-	 int result = 0;
-	if (Admin::addMod(value) == result) {
+int value = 0;
+int result = 0;
+bool Test::testAddMod(){
+	Admin a;
+	if (a.addMod(value) == result) {
 		return true;
 	}
 	else {
-		return false;
+		return false;	
 	}
 }
 
- bool Test::testRemoveMod() {
+bool Test::testRemoveMod() {
 	if (Admin::removeMod(value) == result) {
 		return true;
 	}

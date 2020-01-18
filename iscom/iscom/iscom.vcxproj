@@ -157,6 +157,7 @@
     <ClCompile Include="Message.cpp" />
     <ClCompile Include="Mod.cpp" />
     <ClCompile Include="Picture.cpp" />
+    <ClCompile Include="Test.cpp" />
     <ClCompile Include="User.cpp" />
     <ClCompile Include="UserHandler.cpp" />
   </ItemGroup>
@@ -171,6 +172,7 @@
     <ClInclude Include="Message.h" />
     <ClInclude Include="Mod.h" />
     <ClInclude Include="Picture.h" />
+    <ClInclude Include="Test.h" />
     <ClInclude Include="User.h" />
     <ClInclude Include="UserHandler.h" />
   </ItemGroup>
