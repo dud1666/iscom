@@ -1,120 +1,133 @@
 ﻿  iscom.cpp
+  MessageHandler.cpp
+C:\dev\iscom\iscom\iscom\MessageHandler.cpp(4,1): error C2556: "Message MessageHandler::getMessageByDate(Date,Date)": przeciążona funkcja różni się tylko typem zwracanym od "std::string MessageHandler::getMessageByDate(Date,Date)"
+C:\dev\iscom\iscom\iscom\MessageHandler.h(10): message : zobacz deklarację „MessageHandler::getMessageByDate”
+C:\dev\iscom\iscom\iscom\MessageHandler.cpp(3,25): error C2371: "MessageHandler::getMessageByDate": zmiana definicji; różne typy podstawowe
+C:\dev\iscom\iscom\iscom\MessageHandler.h(10): message : zobacz deklarację „MessageHandler::getMessageByDate”
+C:\dev\iscom\iscom\iscom\MessageHandler.cpp(9,1): error C2556: "long MessageHandler::addMessage(std::string,std::string)": przeciążona funkcja różni się tylko typem zwracanym od "std::string MessageHandler::addMessage(std::string,std::string)"
+C:\dev\iscom\iscom\iscom\MessageHandler.h(11): message : zobacz deklarację „MessageHandler::addMessage”
+C:\dev\iscom\iscom\iscom\MessageHandler.cpp(8,22): error C2371: "MessageHandler::addMessage": zmiana definicji; różne typy podstawowe
+C:\dev\iscom\iscom\iscom\MessageHandler.h(11): message : zobacz deklarację „MessageHandler::addMessage”
+C:\dev\iscom\iscom\iscom\MessageHandler.cpp(14,1): error C2556: "bool MessageHandler::removeMessage(std::string)": przeciążona funkcja różni się tylko typem zwracanym od "std::string MessageHandler::removeMessage(std::string)"
+C:\dev\iscom\iscom\iscom\MessageHandler.h(12): message : zobacz deklarację „MessageHandler::removeMessage”
+C:\dev\iscom\iscom\iscom\MessageHandler.cpp(13,22): error C2371: "MessageHandler::removeMessage": zmiana definicji; różne typy podstawowe
+C:\dev\iscom\iscom\iscom\MessageHandler.h(12): message : zobacz deklarację „MessageHandler::removeMessage”
   Test.cpp
-C:\dev\iscom\iscom\iscom\Test.cpp(7,24): error C2084: funkcja "bool Test::testAddMod(void)" ma już treść
-C:\dev\iscom\iscom\iscom\Test.h(9): message : zobacz poprzednią definicję „testAddMod”
-C:\dev\iscom\iscom\iscom\Test.cpp(8,5): error C2664: „User Admin::addMod(std::string)”: nie można dokonać konwersji argumentu 1 z „int” do „std::string”
-C:\dev\iscom\iscom\iscom\Test.cpp(8,5): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
-C:\dev\iscom\iscom\iscom\Admin.h(8,7): message : zobacz deklarację „Admin::addMod”
-C:\dev\iscom\iscom\iscom\Test.cpp(16,28): error C2084: funkcja "bool Test::testRemoveMod(void)" ma już treść
-C:\dev\iscom\iscom\iscom\Test.h(10): message : zobacz poprzednią definicję „testRemoveMod”
-C:\dev\iscom\iscom\iscom\Test.cpp(17,5): error C2664: „User Admin::removeMod(std::string)”: nie można dokonać konwersji argumentu 1 z „int” do „std::string”
-C:\dev\iscom\iscom\iscom\Test.cpp(17,5): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
-C:\dev\iscom\iscom\iscom\Admin.h(9,7): message : zobacz deklarację „Admin::removeMod”
-C:\dev\iscom\iscom\iscom\Test.cpp(28,36): error C2084: funkcja "bool Test::testGetMessageByDate(void)" ma już treść
-C:\dev\iscom\iscom\iscom\Test.h(20): message : zobacz poprzednią definicję „testGetMessageByDate”
-C:\dev\iscom\iscom\iscom\Test.cpp(29,45): error C2065: "value1": niezadeklarowany identyfikator
-C:\dev\iscom\iscom\iscom\Test.cpp(37,30): error C2084: funkcja "bool Test::testAddMessage(void)" ma już treść
-C:\dev\iscom\iscom\iscom\Test.h(21): message : zobacz poprzednią definicję „testAddMessage”
-C:\dev\iscom\iscom\iscom\Test.cpp(38,39): error C2065: "value1": niezadeklarowany identyfikator
-C:\dev\iscom\iscom\iscom\Test.cpp(38,46): error C2065: "value_tab": niezadeklarowany identyfikator
-C:\dev\iscom\iscom\iscom\Test.cpp(46,33): error C2084: funkcja "bool Test::testRemoveMessage(void)" ma już treść
-C:\dev\iscom\iscom\iscom\Test.h(22): message : zobacz poprzednią definicję „testRemoveMessage”
-C:\dev\iscom\iscom\iscom\Test.cpp(47,22): error C2039: „Message”: Nie jest składową „MessageHandler”
-C:\dev\iscom\iscom\iscom\MessageHandler.h(8): message : zobacz deklarację „MessageHandler”
-C:\dev\iscom\iscom\iscom\Test.cpp(47,46): error C2440: "<function-style-cast>": nie można konwertować z "int" na "Message"
-C:\dev\iscom\iscom\iscom\Test.cpp(47,46): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
-C:\dev\iscom\iscom\iscom\Test.cpp(58,35): error C2084: funkcja "bool Test::testChangeGroupName(void)" ma już treść
-C:\dev\iscom\iscom\iscom\Test.h(27): message : zobacz poprzednią definicję „testChangeGroupName”
-C:\dev\iscom\iscom\iscom\Test.cpp(59,5): error C2664: „std::string Mod::changeGroupName(std::string)”: nie można dokonać konwersji argumentu 1 z „int” do „std::string”
-C:\dev\iscom\iscom\iscom\Test.cpp(59,5): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
-C:\dev\iscom\iscom\iscom\Mod.h(8,14): message : zobacz deklarację „Mod::changeGroupName”
-C:\dev\iscom\iscom\iscom\Test.cpp(67,27): error C2084: funkcja "bool Test::testAddUser(void)" ma już treść
-C:\dev\iscom\iscom\iscom\Test.h(28): message : zobacz poprzednią definicję „testAddUser”
-C:\dev\iscom\iscom\iscom\Test.cpp(68,5): error C2664: „User Mod::addUser(std::string)”: nie można dokonać konwersji argumentu 1 z „int” do „std::string”
-C:\dev\iscom\iscom\iscom\Test.cpp(68,5): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
-C:\dev\iscom\iscom\iscom\Mod.h(9,7): message : zobacz deklarację „Mod::addUser”
-C:\dev\iscom\iscom\iscom\Test.cpp(76,33): error C2084: funkcja "bool Test::testModRemoveUser(void)" ma już treść
-C:\dev\iscom\iscom\iscom\Test.h(29): message : zobacz poprzednią definicję „testModRemoveUser”
-C:\dev\iscom\iscom\iscom\Test.cpp(77,5): error C2664: „User Mod::removeUser(std::string)”: nie można dokonać konwersji argumentu 1 z „int” do „std::string”
-C:\dev\iscom\iscom\iscom\Test.cpp(77,5): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
-C:\dev\iscom\iscom\iscom\Mod.h(10,7): message : zobacz deklarację „Mod::removeUser”
-C:\dev\iscom\iscom\iscom\Test.cpp(88,31): error C2084: funkcja "bool Test::testCreateGroup(void)" ma już treść
-C:\dev\iscom\iscom\iscom\Test.h(34): message : zobacz poprzednią definicję „testCreateGroup”
-C:\dev\iscom\iscom\iscom\Test.cpp(89,12): error C2039: „createGroup”: Nie jest składową „User”
-C:\dev\iscom\iscom\iscom\User.h(3): message : zobacz deklarację „User”
-C:\dev\iscom\iscom\iscom\Test.cpp(89,5): error C3861: "createGroup": identyfikatora nie odnaleziono
-C:\dev\iscom\iscom\iscom\Test.cpp(97,29): error C2084: funkcja "bool Test::testAddFriend(void)" ma już treść
-C:\dev\iscom\iscom\iscom\Test.h(35): message : zobacz poprzednią definicję „testAddFriend”
-C:\dev\iscom\iscom\iscom\Test.cpp(98,12): error C2039: „addFriend”: Nie jest składową „User”
-C:\dev\iscom\iscom\iscom\User.h(3): message : zobacz deklarację „User”
-C:\dev\iscom\iscom\iscom\Test.cpp(98,5): error C3861: "addFriend": identyfikatora nie odnaleziono
-C:\dev\iscom\iscom\iscom\Test.cpp(106,32): error C2084: funkcja "bool Test::testRemoveFriend(void)" ma już treść
-C:\dev\iscom\iscom\iscom\Test.h(36): message : zobacz poprzednią definicję „testRemoveFriend”
-C:\dev\iscom\iscom\iscom\Test.cpp(107,12): error C2039: „removeFriend”: Nie jest składową „User”
-C:\dev\iscom\iscom\iscom\User.h(3): message : zobacz deklarację „User”
-C:\dev\iscom\iscom\iscom\Test.cpp(107,5): error C3861: "removeFriend": identyfikatora nie odnaleziono
-C:\dev\iscom\iscom\iscom\Test.cpp(115,40): error C2084: funkcja "bool Test::testActualiseDescription(void)" ma już treść
-C:\dev\iscom\iscom\iscom\Test.h(37): message : zobacz poprzednią definicję „testActualiseDescription”
-C:\dev\iscom\iscom\iscom\Test.cpp(116,12): error C2039: „actualiseDescription”: Nie jest składową „User”
-C:\dev\iscom\iscom\iscom\User.h(3): message : zobacz deklarację „User”
-C:\dev\iscom\iscom\iscom\Test.cpp(116,5): error C3861: "actualiseDescription": identyfikatora nie odnaleziono
-C:\dev\iscom\iscom\iscom\Test.cpp(124,42): error C2084: funkcja "bool Test::testActualiseProfilPicture(void)" ma już treść
-C:\dev\iscom\iscom\iscom\Test.h(38): message : zobacz poprzednią definicję „testActualiseProfilPicture”
-C:\dev\iscom\iscom\iscom\Test.cpp(125,12): error C2039: „actualiseProfilPicture”: Nie jest składową „User”
-C:\dev\iscom\iscom\iscom\User.h(3): message : zobacz deklarację „User”
-C:\dev\iscom\iscom\iscom\Test.cpp(125,5): error C3861: "actualiseProfilPicture": identyfikatora nie odnaleziono
-C:\dev\iscom\iscom\iscom\Test.cpp(136,27): error C2084: funkcja "bool Test::testGetUser(void)" ma już treść
-C:\dev\iscom\iscom\iscom\Test.h(42): message : zobacz poprzednią definicję „testGetUser”
-C:\dev\iscom\iscom\iscom\Test.cpp(137,5): error C2664: „User UserHandler::getUser(std::string)”: nie można dokonać konwersji argumentu 1 z „int” do „std::string”
-C:\dev\iscom\iscom\iscom\Test.cpp(137,5): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
-C:\dev\iscom\iscom\iscom\UserHandler.h(8,7): message : zobacz deklarację „UserHandler::getUser”
-C:\dev\iscom\iscom\iscom\Test.cpp(145,37): error C2084: funkcja "bool Test::testHandlerRemoveUser(void)" ma już treść
-C:\dev\iscom\iscom\iscom\Test.h(43): message : zobacz poprzednią definicję „testHandlerRemoveUser”
-C:\dev\iscom\iscom\iscom\Test.cpp(146,5): error C2664: „std::string UserHandler::removeUser(std::string)”: nie można dokonać konwersji argumentu 1 z „int” do „std::string”
-C:\dev\iscom\iscom\iscom\Test.cpp(146,5): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
-C:\dev\iscom\iscom\iscom\UserHandler.h(9,14): message : zobacz deklarację „UserHandler::removeUser”
-C:\dev\iscom\iscom\iscom\Test.cpp(154,30): error C2084: funkcja "bool Test::testUpdateUser(void)" ma już treść
-C:\dev\iscom\iscom\iscom\Test.h(44): message : zobacz poprzednią definicję „testUpdateUser”
-C:\dev\iscom\iscom\iscom\Test.cpp(155,5): error C2664: „User UserHandler::updateUser(std::string)”: nie można dokonać konwersji argumentu 1 z „int” do „std::string”
-C:\dev\iscom\iscom\iscom\Test.cpp(155,5): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
-C:\dev\iscom\iscom\iscom\UserHandler.h(10,7): message : zobacz deklarację „UserHandler::updateUser”
-C:\dev\iscom\iscom\iscom\Test.cpp(167,23): error C2084: funkcja "bool Test::testGet(void)" ma już treść
-C:\dev\iscom\iscom\iscom\Test.h(14): message : zobacz poprzednią definicję „testGet”
-C:\dev\iscom\iscom\iscom\Test.cpp(168,15): error C2039: „get”: Nie jest składową „Handler”
-C:\dev\iscom\iscom\iscom\Handler.h(2): message : zobacz deklarację „Handler”
-C:\dev\iscom\iscom\iscom\Test.cpp(168,26): error C2065: "value1": niezadeklarowany identyfikator
-C:\dev\iscom\iscom\iscom\Test.cpp(168,5): error C3861: "get": identyfikatora nie odnaleziono
-C:\dev\iscom\iscom\iscom\Test.cpp(176,23): error C2084: funkcja "bool Test::testAdd(void)" ma już treść
-C:\dev\iscom\iscom\iscom\Test.h(15): message : zobacz poprzednią definicję „testAdd”
-C:\dev\iscom\iscom\iscom\Test.cpp(177,15): error C2039: „add”: Nie jest składową „Handler”
-C:\dev\iscom\iscom\iscom\Handler.h(2): message : zobacz deklarację „Handler”
-C:\dev\iscom\iscom\iscom\Test.cpp(177,26): error C2065: "value1": niezadeklarowany identyfikator
-C:\dev\iscom\iscom\iscom\Test.cpp(177,34): error C2065: "value_tab": niezadeklarowany identyfikator
-C:\dev\iscom\iscom\iscom\Test.cpp(177,5): error C3861: "add": identyfikatora nie odnaleziono
-C:\dev\iscom\iscom\iscom\Test.cpp(185,26): error C2084: funkcja "bool Test::testRemove(void)" ma już treść
-C:\dev\iscom\iscom\iscom\Test.h(16): message : zobacz poprzednią definicję „testRemove”
-C:\dev\iscom\iscom\iscom\Test.cpp(186,15): error C2039: „remove”: Nie jest składową „Handler”
-C:\dev\iscom\iscom\iscom\Handler.h(2): message : zobacz deklarację „Handler”
-C:\dev\iscom\iscom\iscom\Test.cpp(186,5): error C2664: „int remove(const char *)”: nie można dokonać konwersji argumentu 1 z „int” do „const char *”
-C:\dev\iscom\iscom\iscom\Test.cpp(186,22): message : Konwersja z typu całkowitego na typ wskaźnika wymaga operatora reinterpret_cast, rzutowania w stylu języka C lub rzutowania w stylu funkcji
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(364,26): message : zobacz deklarację „remove”
+C:\dev\iscom\iscom\iscom\Test.cpp(23,13): error C2352: „Admin::removeMod”: Niedozwolone wywołanie niestatycznej funkcji składowej
+C:\dev\iscom\iscom\iscom\Admin.h(10): message : zobacz deklarację „Admin::removeMod”
+C:\dev\iscom\iscom\iscom\Test.cpp(24,14): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(24,14): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(38,22): error C2352: „MessageHandler::getMessageByDate”: Niedozwolone wywołanie niestatycznej funkcji składowej
+C:\dev\iscom\iscom\iscom\MessageHandler.h(10): message : zobacz deklarację „MessageHandler::getMessageByDate”
+C:\dev\iscom\iscom\iscom\Test.cpp(39,14): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(39,14): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(42,15): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(42,15): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(50,22): error C2352: „MessageHandler::addMessage”: Niedozwolone wywołanie niestatycznej funkcji składowej
+C:\dev\iscom\iscom\iscom\MessageHandler.h(11): message : zobacz deklarację „MessageHandler::addMessage”
+C:\dev\iscom\iscom\iscom\Test.cpp(51,14): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(51,14): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(60,29): error C2440: "inicjowanie": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(60,29): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(61,22): error C2039: „Message”: Nie jest składową „MessageHandler”
+C:\dev\iscom\iscom\iscom\MessageHandler.h(7): message : zobacz deklarację „MessageHandler”
+C:\dev\iscom\iscom\iscom\Test.cpp(61,46): error C2440: "<function-style-cast>": nie można konwertować z "std::string" na "Message"
+C:\dev\iscom\iscom\iscom\Test.cpp(61,46): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(62,14): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(62,14): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(65,15): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(65,15): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(76,11): error C2352: „Mod::changeGroupName”: Niedozwolone wywołanie niestatycznej funkcji składowej
+C:\dev\iscom\iscom\iscom\Mod.h(8): message : zobacz deklarację „Mod::changeGroupName”
+C:\dev\iscom\iscom\iscom\Test.cpp(77,14): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(77,14): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(80,15): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(80,15): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(88,11): error C2352: „Mod::addUser”: Niedozwolone wywołanie niestatycznej funkcji składowej
+C:\dev\iscom\iscom\iscom\Mod.h(9): message : zobacz deklarację „Mod::addUser”
+C:\dev\iscom\iscom\iscom\Test.cpp(89,14): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(89,14): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(92,15): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(92,15): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(100,11): error C2352: „Mod::removeUser”: Niedozwolone wywołanie niestatycznej funkcji składowej
+C:\dev\iscom\iscom\iscom\Mod.h(10): message : zobacz deklarację „Mod::removeUser”
+C:\dev\iscom\iscom\iscom\Test.cpp(101,14): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(101,14): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(104,15): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(104,15): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(113,12): error C2352: „User::createGroup”: Niedozwolone wywołanie niestatycznej funkcji składowej
+C:\dev\iscom\iscom\iscom\User.h(12): message : zobacz deklarację „User::createGroup”
+C:\dev\iscom\iscom\iscom\Test.cpp(114,14): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(114,14): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(117,15): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(117,15): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(124,12): error C2352: „User::addFriend”: Niedozwolone wywołanie niestatycznej funkcji składowej
+C:\dev\iscom\iscom\iscom\User.h(13): message : zobacz deklarację „User::addFriend”
+C:\dev\iscom\iscom\iscom\Test.cpp(125,14): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(125,14): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(128,15): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(128,15): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(135,12): error C2352: „User::removeFriend”: Niedozwolone wywołanie niestatycznej funkcji składowej
+C:\dev\iscom\iscom\iscom\User.h(14): message : zobacz deklarację „User::removeFriend”
+C:\dev\iscom\iscom\iscom\Test.cpp(136,14): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(136,14): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(139,15): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(139,15): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(145,29): error C2440: "inicjowanie": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(145,29): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(146,12): error C2352: „User::actualiseDescription”: Niedozwolone wywołanie niestatycznej funkcji składowej
+C:\dev\iscom\iscom\iscom\User.h(15): message : zobacz deklarację „User::actualiseDescription”
+C:\dev\iscom\iscom\iscom\Test.cpp(147,14): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(147,14): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(150,15): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(150,15): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(161,3): error C2065: "Uaer": niezadeklarowany identyfikator
+C:\dev\iscom\iscom\iscom\Test.cpp(161,8): error C2146: błąd składniowy: brakuje „;” przed identyfikatorem „result”
+C:\dev\iscom\iscom\iscom\Test.cpp(161,8): error C2065: "result": niezadeklarowany identyfikator
+C:\dev\iscom\iscom\iscom\Test.cpp(162,19): error C2039: „getUser”: Nie jest składową „UserHandler”
+C:\dev\iscom\iscom\iscom\UserHandler.h(5): message : zobacz deklarację „UserHandler”
+C:\dev\iscom\iscom\iscom\Test.cpp(162,5): error C3861: "getUser": identyfikatora nie odnaleziono
+C:\dev\iscom\iscom\iscom\Test.cpp(162,37): error C2065: "result": niezadeklarowany identyfikator
+C:\dev\iscom\iscom\iscom\Test.cpp(163,14): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(163,14): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(166,15): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(166,15): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(173,19): error C2039: „removeUser”: Nie jest składową „UserHandler”
+C:\dev\iscom\iscom\iscom\UserHandler.h(5): message : zobacz deklarację „UserHandler”
+C:\dev\iscom\iscom\iscom\Test.cpp(173,5): error C3861: "removeUser": identyfikatora nie odnaleziono
+C:\dev\iscom\iscom\iscom\Test.cpp(174,14): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(174,14): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(177,15): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(177,15): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(184,19): error C2039: „updateUser”: Nie jest składową „UserHandler”
+C:\dev\iscom\iscom\iscom\UserHandler.h(5): message : zobacz deklarację „UserHandler”
+C:\dev\iscom\iscom\iscom\Test.cpp(184,5): error C3861: "updateUser": identyfikatora nie odnaleziono
+C:\dev\iscom\iscom\iscom\Test.cpp(185,14): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(185,14): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+C:\dev\iscom\iscom\iscom\Test.cpp(188,15): error C2440: "return": nie można konwertować z "bool" na "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\dev\iscom\iscom\iscom\Test.cpp(188,15): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+  User.cpp
+C:\dev\iscom\iscom\iscom\User.cpp(4,1): error C2556: "Group User::createGroup(void)": przeciążona funkcja różni się tylko typem zwracanym od "std::string User::createGroup(void)"
+C:\dev\iscom\iscom\iscom\User.h(12): message : zobacz deklarację „User::createGroup”
+C:\dev\iscom\iscom\iscom\User.cpp(3,13): error C2371: "User::createGroup": zmiana definicji; różne typy podstawowe
+C:\dev\iscom\iscom\iscom\User.h(12): message : zobacz deklarację „User::createGroup”
+C:\dev\iscom\iscom\iscom\User.cpp(9,1): error C2556: "User User::addFriend(std::string)": przeciążona funkcja różni się tylko typem zwracanym od "std::string User::addFriend(std::string)"
+C:\dev\iscom\iscom\iscom\User.h(13): message : zobacz deklarację „User::addFriend”
+C:\dev\iscom\iscom\iscom\User.cpp(8,12): error C2371: "User::addFriend": zmiana definicji; różne typy podstawowe
+C:\dev\iscom\iscom\iscom\User.h(13): message : zobacz deklarację „User::addFriend”
+C:\dev\iscom\iscom\iscom\User.cpp(14,1): error C2556: "User User::removeFriend(std::string)": przeciążona funkcja różni się tylko typem zwracanym od "std::string User::removeFriend(std::string)"
+C:\dev\iscom\iscom\iscom\User.h(14): message : zobacz deklarację „User::removeFriend”
+C:\dev\iscom\iscom\iscom\User.cpp(13,12): error C2371: "User::removeFriend": zmiana definicji; różne typy podstawowe
+C:\dev\iscom\iscom\iscom\User.h(14): message : zobacz deklarację „User::removeFriend”
+C:\dev\iscom\iscom\iscom\User.cpp(19,1): error C2556: "bool User::actualiseDescription(std::string)": przeciążona funkcja różni się tylko typem zwracanym od "std::string User::actualiseDescription(std::string)"
+C:\dev\iscom\iscom\iscom\User.h(15): message : zobacz deklarację „User::actualiseDescription”
+C:\dev\iscom\iscom\iscom\User.cpp(18,12): error C2371: "User::actualiseDescription": zmiana definicji; różne typy podstawowe
+C:\dev\iscom\iscom\iscom\User.h(15): message : zobacz deklarację „User::actualiseDescription”
+  UserHandler.cpp
+C:\dev\iscom\iscom\iscom\UserHandler.cpp(3,19): error C2039: „getUser”: Nie jest składową „UserHandler”
+C:\dev\iscom\iscom\iscom\UserHandler.h(5): message : zobacz deklarację „UserHandler”
+C:\dev\iscom\iscom\iscom\UserHandler.cpp(8,26): error C2039: „removeUser”: Nie jest składową „UserHandler”
+C:\dev\iscom\iscom\iscom\UserHandler.h(5): message : zobacz deklarację „UserHandler”
+C:\dev\iscom\iscom\iscom\UserHandler.cpp(13,19): error C2039: „updateUser”: Nie jest składową „UserHandler”
+C:\dev\iscom\iscom\iscom\UserHandler.h(5): message : zobacz deklarację „UserHandler”
   Generowanie kodu...
-C:\dev\iscom\iscom\iscom\Test.h(9): error C4716: "Test::testAddMod": musi zwracać wartość
-C:\dev\iscom\iscom\iscom\Test.h(14): error C4716: "Test::testGet": musi zwracać wartość
-C:\dev\iscom\iscom\iscom\Test.h(15): error C4716: "Test::testAdd": musi zwracać wartość
-C:\dev\iscom\iscom\iscom\Test.h(16): error C4716: "Test::testRemove": musi zwracać wartość
-C:\dev\iscom\iscom\iscom\Test.h(20): error C4716: "Test::testGetMessageByDate": musi zwracać wartość
-C:\dev\iscom\iscom\iscom\Test.h(21): error C4716: "Test::testAddMessage": musi zwracać wartość
-C:\dev\iscom\iscom\iscom\Test.h(22): error C4716: "Test::testRemoveMessage": musi zwracać wartość
-C:\dev\iscom\iscom\iscom\Test.h(27): error C4716: "Test::testChangeGroupName": musi zwracać wartość
-C:\dev\iscom\iscom\iscom\Test.h(28): error C4716: "Test::testAddUser": musi zwracać wartość
-C:\dev\iscom\iscom\iscom\Test.h(29): error C4716: "Test::testModRemoveUser": musi zwracać wartość
-C:\dev\iscom\iscom\iscom\Test.h(34): error C4716: "Test::testCreateGroup": musi zwracać wartość
-C:\dev\iscom\iscom\iscom\Test.h(36): error C4716: "Test::testRemoveFriend": musi zwracać wartość
-C:\dev\iscom\iscom\iscom\Test.h(35): error C4716: "Test::testAddFriend": musi zwracać wartość
-C:\dev\iscom\iscom\iscom\Test.h(38): error C4716: "Test::testActualiseProfilPicture": musi zwracać wartość
-C:\dev\iscom\iscom\iscom\Test.h(42): error C4716: "Test::testGetUser": musi zwracać wartość
-C:\dev\iscom\iscom\iscom\Test.h(10): error C4716: "Test::testRemoveMod": musi zwracać wartość
-C:\dev\iscom\iscom\iscom\Test.h(43): error C4716: "Test::testHandlerRemoveUser": musi zwracać wartość
-C:\dev\iscom\iscom\iscom\Test.h(44): error C4716: "Test::testUpdateUser": musi zwracać wartość
-C:\dev\iscom\iscom\iscom\Test.h(37): error C4716: "Test::testActualiseDescription": musi zwracać wartość

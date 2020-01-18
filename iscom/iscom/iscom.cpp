@@ -141,6 +141,11 @@ int main()
 
     SetStdinEcho(true);
 
+	Handler h;
+	std::map<std::string, std::string> m;
+	m["a"] = "b";
+	h.add(m);
+
     return 0;
 
 }
