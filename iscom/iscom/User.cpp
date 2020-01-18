@@ -1,21 +1,21 @@
 #include "User.h"
 
-Group User::createGroup()
+std::string User::createGroup()
 {
-	return Group();
+	return std::string();
 }
 
-User User::addFriend(std::string user_id)
+std::string User::addFriend(std::string user_id)
 {
-	return User();
+	return std::string();
 }
 
-User User::removeFriend(std::string user_id)
+std::string User::removeFriend(std::string user_id)
 {
-	return User();
+	return std::string();
 }
 
-bool User::actualiseDescription(std::string description)
+std::string User::actualiseDescription(std::string description)
 {
-	return false;
+	return std::string();
 }
