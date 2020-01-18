@@ -1,5 +1,16 @@
 #pragma once
 #include "Core.h"
+#include <string>
+#include "Admin.h"
+#include "MessageHandler.h"
+#include "Message.h"
+#include "Mod.h"
+#include "Date.h"
+#include "Group.h"
+#include "User.h"
+#include "UserHandler.h"
+
+
 
 class Test
 {
@@ -10,11 +21,11 @@ public:
 	 bool testRemoveMod();
 
 	//metody dla klasy Handler
-
+	 /*
 	 bool testGet();
 	 bool testAdd();
 	 bool testRemove();
-
+	 */
 	//metody dla klasy MessageHandler
 
 	 bool testGetMessageByDate();
@@ -35,13 +46,13 @@ public:
 	 bool testAddFriend();
 	 bool testRemoveFriend();
 	 bool testActualiseDescription();
-	 bool testActualiseProfilPicture();
 
 
 	//metody dla klasy UserHandler
+	
 	 bool testGetUser();
 	 bool testHandlerRemoveUser();
 	 bool testUpdateUser();
-
+	 
 
 };

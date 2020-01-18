@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "Group.h"
 class User
 {
 
@@ -7,7 +8,13 @@ class User
 	std::string login;
 	std::string password;
 	std::string description;
-	std::string profil_picture_address;
+
+
+	Group createGroup();
+	User addFriend(std::string user_id);
+	User removeFriend(std::string user_id);
+	bool actualiseDescription(std::string description);
+
 
 };
 

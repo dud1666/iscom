@@ -55,7 +55,7 @@ void tests() {
 	}
 
 	//testy dla metod z klasy Handler
-
+	/*
 	if (!test.testGet()) {
 		std::cout << test.testGet() << std::endl;
 	}
@@ -65,7 +65,7 @@ void tests() {
 	if (!test.testRemove()) {
 		std::cout << test.testRemove() << std::endl;
 	}
-
+	*/
 	//testy dla metod z klasy MessageHandler
 
 	if (!test.testGetMessageByDate()) {
@@ -104,10 +104,7 @@ void tests() {
 	if (!test.testActualiseDescription()) {
 		std::cout << test.testActualiseDescription() << std::endl;
 	}
-	if (!test.testActualiseProfilPicture()) {
-		std::cout << test.testActualiseProfilPicture() << std::endl;
-	}
-
+	
 	//testy dla metod z klasy UserHandler
 
 	if (!test.testGetUser()) {
