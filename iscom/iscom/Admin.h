@@ -5,7 +5,8 @@
 class Admin :
 	public Mod
 {
-	User addMod(std::string mod_id);
-	User removeMod(std::string mod_id);
+public:
+	std::string addMod(std::string mod_id) {};
+	std::string removeMod(std::string mod_id) {};
 };
 

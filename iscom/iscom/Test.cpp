@@ -3,20 +3,23 @@
 
 //metody dla klasy Admin
 
- bool Test::testAddMod(){
-	 int value = 0;
-	 int result = 0;
-	if (Admin::addMod(value) == result) {
-		return true;
+ std::string Test::testAddMod(){
+	std::string value = "0";
+	std::string expected = "0";
+	Admin a;
+
+	std::string result = a.addMod(value);
+	if (a.addMod(value) == result) {
+		return "OK";
 	}
 	else {
-		return false;
+		return result;
 	}
 }
 
- bool Test::testRemoveMod() {
-	 int value = 0;
-	 int result = 0;
+ std::string Test::testRemoveMod() {
+	 std::string value = 0;
+	 std::string result = 0;
 	if (Admin::removeMod(value) == result) {
 		return true;
 	}
@@ -28,7 +31,7 @@
 
 //metody dla klasy MessageHandler
 
- bool Test::testGetMessageByDate() {
+ std::string Test::testGetMessageByDate() {
 	 Date value = Date();
 	 Date value1 = Date();
 	 Message result = Message();
@@ -40,7 +43,7 @@
 	}
 }
 
- bool Test::testAddMessage() {
+ std::string Test::testAddMessage() {
 	 std::string value = std::string();
 	 std::string value1 = std::string();
 	 long result = 0;
@@ -52,9 +55,9 @@
 	}
 }
 
- bool Test::testRemoveMessage() {
+ std::string Test::testRemoveMessage() {
 	 std::string value = std::string();
-	 bool result = false;
+	 std::string result = false;
 	if (MessageHandler::Message(value) == result) {
 		return true;
 	}
@@ -66,7 +69,7 @@
 
 //metody dla klasy Mod
 
- bool Test::testChangeGroupName() {
+ std::string Test::testChangeGroupName() {
 	 std::string value = std::string();
 	 std::string value1 = std::string();
 	 std::string result = std::string();
@@ -78,7 +81,7 @@
 	}
 }
 
- bool Test::testAddUser() {
+ std::string Test::testAddUser() {
 	 std::string value = std::string();
 	 std::string value1 = std::string();
 	 User result = User();
@@ -90,7 +93,7 @@
 	}
 }
 
- bool Test::testModRemoveUser() {
+ std::string Test::testModRemoveUser() {
 	 std::string value = std::string();
 	 std::string value1 = std::string();
 	 User result = User();
@@ -105,7 +108,7 @@
 
 //metody dla klasy User
 
- bool Test::testCreateGroup() {
+ std::string Test::testCreateGroup() {
 	 Group result = Group();
 	if (User::createGroup() == result) {
 		return true;
@@ -115,7 +118,7 @@
 	}
 }
 
- bool Test::testAddFriend() {
+ std::string Test::testAddFriend() {
 	 std::string value = std::string();
 	 User result = User();
 	if (User::addFriend(value) == result) {
@@ -126,7 +129,7 @@
 	}
 }
 
- bool Test::testRemoveFriend() {
+ std::string Test::testRemoveFriend() {
 	 std::string value = std::string();
 	 User result = User();
 	if (User::removeFriend(value) == result) {
@@ -137,9 +140,9 @@
 	}
 }
 
- bool Test::testActualiseDescription() {
+ std::string Test::testActualiseDescription() {
 	 std::string value = std::string();
-	 bool result = false;
+	 std::string result = false;
 	if (User::actualiseDescription(value) == result) {
 		return true;
 	}
@@ -153,7 +156,7 @@
 
 //metody dla klasy UserHandler
 
- bool Test::testGetUser() {
+ std::string Test::testGetUser() {
 	 std::string value = std::string();
 	 Uaer result = User();
 	if (UserHandler::getUser(value) == result) {
@@ -164,7 +167,7 @@
 	}
 }
 
- bool Test::testHandlerRemoveUser() {
+ std::string Test::testHandlerRemoveUser() {
 	 std::string value = std::string();
 	 std::string result = std::string();
 	if (UserHandler::removeUser(value) == result) {
@@ -175,7 +178,7 @@
 	}
 }
 
- bool Test::testUpdateUser() {
+ std::string Test::testUpdateUser() {
 	 std::string value = std::string();
 	 User result = User();
 	if (UserHandler::updateUser(value) == result) {
@@ -190,7 +193,7 @@
 //metody dla klasy Handler
  /*
 
- bool Test::testGet() {
+ std::string Test::testGet() {
 	if (Handler::get(value, value1) == result) {
 		return true;
 	}
@@ -199,7 +202,7 @@
 	}
 }
 
- bool Test::testAdd() {
+ std::string Test::testAdd() {
 	if (Handler::add(value, value1, value_tab) == result) {
 		return true;
 	}
@@ -208,7 +211,7 @@
 	}
 }
 
- bool Test::testRemove() {
+ std::string Test::testRemove() {
 	if (Handler::remove(value) == result) {
 		return true;
 	}

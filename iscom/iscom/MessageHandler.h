@@ -6,9 +6,10 @@
 
 class MessageHandler : public Handler
 {
-	Message getMessageByDate(Date data_start, Date data_end);
-	long addMessage(std::string message, std::string group_id);
-	bool removeMessage(std::string id);
+public:
+	std::string getMessageByDate(Date data_start, Date data_end);
+	std::string addMessage(std::string message, std::string group_id);
+	std::string removeMessage(std::string id);
 
 };
 

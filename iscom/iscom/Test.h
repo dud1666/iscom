@@ -6,42 +6,42 @@ class Test
 public:
 	//metody dla klasy Admin
 
-	bool testAddMod() {};
-	bool testRemoveMod() {};
+	std::string testAddMod() {};
+	std::string testRemoveMod() {};
 
 	//metody dla klasy Handler
 
-	 bool testGet() {};
-	 bool testAdd() {};
-	 bool testRemove() {};
+	 std::string testGet() {};
+	 std::string testAdd() {};
+	 std::string testRemove() {};
 
 	//metody dla klasy MessageHandler
 
-	 bool testGetMessageByDate() {};
-	 bool testAddMessage() {};
-	 bool testRemoveMessage() {};
+	 std::string testGetMessageByDate() {};
+	 std::string testAddMessage() {};
+	 std::string testRemoveMessage() {};
 
 
 	//metody dla klasy Mod
 
-	 bool testChangeGroupName() {};
-	 bool testAddUser() {};
-	 bool testModRemoveUser() {};
+	 std::string testChangeGroupName() {};
+	 std::string testAddUser() {};
+	 std::string testModRemoveUser() {};
 
 
 	//metody dla klasy User
 
-	 bool testCreateGroup() {};
-	 bool testAddFriend() {};
-	 bool testRemoveFriend() {};
-	 bool testActualiseDescription() {};
-	 bool testActualiseProfilPicture() {};
+	 std::string testCreateGroup() {};
+	 std::string testAddFriend() {};
+	 std::string testRemoveFriend() {};
+	 std::string testActualiseDescription() {};
+	 std::string testActualiseProfilPicture() {};
 
 
 	//metody dla klasy UserHandler
-	 bool testGetUser() {};
-	 bool testHandlerRemoveUser() {};
-	 bool testUpdateUser() {};
+	 std::string testGetUser() {};
+	 std::string testHandlerRemoveUser() {};
+	 std::string testUpdateUser() {};
 
 
 };

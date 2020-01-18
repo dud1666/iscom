@@ -4,10 +4,11 @@
 
 class UserHandler : public Handler
 {
+public:
 
-	User getUser(std::string id);
+	std::string getUser(std::string id);
 	std::string removeUser(std::string id);
-	User updateUser(std::string id);
+	std::string updateUser(std::string id);
 
 };
 

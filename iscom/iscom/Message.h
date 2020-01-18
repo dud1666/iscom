@@ -4,6 +4,7 @@
 
 class Message
 {
+public:
 	std::string message_id;
 	std::string content;
 	std::string group_id;

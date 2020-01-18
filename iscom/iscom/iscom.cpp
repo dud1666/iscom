@@ -47,10 +47,10 @@ void tests() {
 
 	//testy dla metod z klasy Admin
 
-	if (!test.testAddMod()) {
+	if (test.testAddMod() != "OK") {
 		std::cout << test.testAddMod() << std::endl;
 	}
-	if (!test.testRemoveMod()) {
+	if (test.testRemoveMod() != "OK") {
 		std::cout << test.testRemoveMod() << std::endl;
 	}
 
