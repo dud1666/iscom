@@ -4,6 +4,8 @@
 //metody dla klasy Admin
 
  bool Test::testAddMod(){
+	 int value = 0;
+	 int result = 0;
 	if (Admin::addMod(value) == result) {
 		return true;
 	}

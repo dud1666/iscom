@@ -43,7 +43,7 @@ void SetStdinEcho(bool enable = true)
 
 void tests() {
 
-	Test test = new Test;
+	Test test;
 
 	//testy dla metod z klasy Admin
 
