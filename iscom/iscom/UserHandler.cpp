@@ -1,8 +1,8 @@
 #include "UserHandler.h"
 
-User UserHandler::getUser(std::string id)
+std::string UserHandler::getUser(std::string id)
 {
-	return User();
+	return std::string();
 }
 
 std::string UserHandler::removeUser(std::string id)
@@ -10,7 +10,7 @@ std::string UserHandler::removeUser(std::string id)
 	return std::string();
 }
 
-User UserHandler::updateUser(std::string id)
+std::string UserHandler::updateUser(std::string id)
 {
-	return User();
+	return std::string();
 }

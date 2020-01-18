@@ -35,7 +35,6 @@ public:
 	 std::string testAddFriend() ;
 	 std::string testRemoveFriend() ;
 	 std::string testActualiseDescription() ;
-	 std::string testActualiseProfilPicture() ;
 
 
 	//metody dla klasy UserHandler
