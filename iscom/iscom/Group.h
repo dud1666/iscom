@@ -1,13 +1,19 @@
 #pragma once
 #include <string>
+#include <vector>
 
 
 class Group
 {	
 public:
-	std::string id;
+	int id;
 	std::string name;
-	std::string admin_id;
+	std::vector<int> admin_id;
+	std::vector<int> mod_id;
+
+	int saveGroup();
+	Group(int id);
+	Group(std::string name);
 
 };
 

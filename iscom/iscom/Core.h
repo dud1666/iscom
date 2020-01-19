@@ -15,3 +15,5 @@
 
 #include "Message.h"
 #include "Picture.h"
+
+extern int CURRENT_USER;

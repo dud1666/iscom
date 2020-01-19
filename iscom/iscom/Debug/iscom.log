@@ -1,8 +1,2 @@
-﻿  GroupHandler.cpp
-  Handler.cpp
-  MessageHandler.cpp
-  Test.cpp
-  UserHandler.cpp
-  iscom.cpp
-  Generowanie kodu...
+﻿  iscom.cpp
   iscom.vcxproj -> C:\dev\iscom\iscom\Debug\iscom.exe

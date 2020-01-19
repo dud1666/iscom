@@ -171,6 +171,7 @@
     <ClInclude Include="MessageHandler.h" />
     <ClInclude Include="Message.h" />
     <ClInclude Include="Mod.h" />
+    <ClInclude Include="CurrentUser.h" />
     <ClInclude Include="Picture.h" />
     <ClInclude Include="Test.h" />
     <ClInclude Include="User.h" />

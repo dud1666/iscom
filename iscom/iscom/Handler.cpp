@@ -8,7 +8,6 @@ Handler::Handler() {
 
 int Handler::add(nlohmann::json values) {
 
-	
 	file.open(filename, std::ios::in);
 	if (file.is_open()) {
 		nlohmann::json j;
@@ -66,6 +65,25 @@ nlohmann::json Handler::get(int id) {
 	}
 
 }
+nlohmann::json Handler::get() {
+
+	file.open(filename, std::ios::in);
+
+	nlohmann::json j;
+	try
+	{
+		j = nlohmann::json::parse(file);
+	}
+	catch (nlohmann::json::parse_error & e)
+	{
+		// output exception information
+		std::cout << "message: " << e.what() << '\n'
+			<< "exception id: " << e.id << '\n'
+			<< "byte position of error: " << e.byte << std::endl;
+	}
+		file.close();
+		return j;
+}
 
 int Handler::update(int id, nlohmann::json values) {
 	
@@ -101,6 +119,47 @@ int Handler::update(int id, nlohmann::json values) {
 }
 
 int Handler::update_field(int id, std::string field, std::string value) {
+
+	file.open(filename, std::ios::in);
+
+	nlohmann::json j;
+
+	try
+	{
+		j = nlohmann::json::parse(file);
+		file.close();
+	}
+	catch (nlohmann::json::parse_error & e)
+	{
+		// output exception information
+		std::cout << "message: " << e.what() << '\n'
+			<< "exception id: " << e.id << '\n'
+			<< "byte position of error: " << e.byte << std::endl;
+	}
+
+	if (j.contains(std::to_string(id))) {
+		nlohmann::json o;
+		o = j[std::to_string(id)];
+		if (o.contains(field)) {
+			o[field] = value;
+		}
+		else {
+			return -1;
+		}
+		j[std::to_string(id)] = o;
+		std::ofstream file(filename);
+		file << j;
+		file.close();
+		return id;
+	}
+	else {
+		file.close();
+		return -1;
+	}
+
+}
+
+int Handler::update_field(int id, std::string field, std::vector<int> value) {
 
 	file.open(filename, std::ios::in);
 

@@ -12,7 +12,7 @@
 #include "Core.h"
 #include "Test.h"
 #include "nlohmann/json.hpp"
-
+int CURRENT_USER = -1;
 
 void SetStdinEcho(bool enable = true)
 {
@@ -142,18 +142,10 @@ int main()
 
     SetStdinEcho(true);
 
-	Handler h;
-	nlohmann::json a = { {"currency", "USD"}, {"value", 42.99} }; 
-	nlohmann::json b = { {"jan", "pawel"}, {"value", 2137} };
-
-	h.add(a);
-	std::cout << h.get(2).dump();
-	h.update(2, b);
-	std::cout << h.get(2).dump();
-	std::cout << h.get(3).dump();
-
+	User u = User();
+	u.login(login, password);
+	std::cout << CURRENT_USER;
 	
-	h.remove(3);
     return 0;
 
 }

@@ -6,4 +6,3 @@ class GroupHandler :
 {
 	std::string filename = "file/group.json";
 };
-
