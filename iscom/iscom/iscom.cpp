@@ -143,6 +143,11 @@ int main()
     SetStdinEcho(true);
 
 	User u = User();
+	UserHandler uh;
+	nlohmann::json j = { {"name","admin"},{"password","admin1"} };
+	
+	uh.add(j);
+
 	u.login(login, password);
 	std::cout << CURRENT_USER;
 	
