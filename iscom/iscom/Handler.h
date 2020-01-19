@@ -6,13 +6,14 @@
 class Handler
 {
 public:
-	std::string filename = "dump";
+	std::string filename = "file/dump.json";
 	std::fstream file;
 
 	nlohmann::json get(int id);
-	nlohmann::json add(std::map<std::string, std::string> values);
-	nlohmann::json update(int id, std::map<std::string, std::string> values);
-	nlohmann::json remove(int id);
+	int add(nlohmann::json values);
+	int update(int id, nlohmann::json values);
+	int update_field(int id, std::string field, std::string value);
+	int remove(int id);
 	Handler();
 };
 

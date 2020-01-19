@@ -6,8 +6,9 @@
 
 class MessageHandler : public Handler
 {
+	std::string filename = "file/message.json";
 public:
-	std::string getMessageByDate(Date data_start, Date data_end);
+	std::string getMessagesByDate(Date data_start, Date data_end);
 	std::string addMessage(std::string message, std::string group_id);
 	std::string removeMessage(std::string id);
 

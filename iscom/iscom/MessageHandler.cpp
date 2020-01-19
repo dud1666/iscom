@@ -1,6 +1,6 @@
 #include "MessageHandler.h"
 
-std::string MessageHandler::getMessageByDate(Date data_start, Date data_end)
+std::string MessageHandler::getMessagesByDate(Date data_start, Date data_end)
 {
 	return std::string();
 }

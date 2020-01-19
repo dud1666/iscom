@@ -37,10 +37,10 @@
  std::string Test::testGetMessageByDate() {
 	 MessageHandler testMessageHandler;
 	 Date value = Date();
-	 Date value1 = Date();
+	 Date value1= Date();
 	 std::string expected = std::string();
 
-	 std::string result = testMessageHandler.getMessageByDate(value, value1);
+	 std::string result = testMessageHandler.getMessagesByDate(value, value1);
 	if (expected == result) {
 		return "OK";
 	}
@@ -53,7 +53,7 @@
 	 MessageHandler testMessageHandler;
 	 std::string value = std::string();
 	 std::string value1 = std::string();
-	 std::string expected = 0;
+	 std::string expected = std::string();
 
 	 std::string result = testMessageHandler.addMessage(value, value1);
 	if (expected == result) {
@@ -169,7 +169,7 @@
 	 User testUser;
 	 std::string value = std::string();
 	 std::string expected = std::string();
-	 std::string result = testUser.actualiseDescription(value);
+	 std::string result = testUser.updateDescription(value);
 	if (expected == result) {
 		return "OK";
 	}
@@ -185,9 +185,9 @@
 
  std::string Test::testGetUser() {
 	 UserHandler testUserHandler;
-	 std::string value = std::string();
+	 int value = 1;
 	 std::string expected = std::string();
-	 std::string result = testUserHandler.getUser(value);
+	 std::string result = testUserHandler.get(value);
 	if (expected == result) {
 		return "OK";
 	}
@@ -198,27 +198,28 @@
 
  std::string Test::testHandlerRemoveUser() {
 	 UserHandler testUserHandler;
-	 std::string value = std::string();
-	 std::string expected = std::string();
-	 std::string result = testUserHandler.removeUser(value);
+	 int value = 1;
+	 int expected = 1;
+	 int result = testUserHandler.remove(value);
 	if (expected == result) {
-		return "OK";
+		return "ok";
 	}
 	else {
-		return result;
+		return std::to_string(result);
 	}
 }
 
  std::string Test::testUpdateUser() {
 	 UserHandler testUserHandler;
-	 std::string value = std::string();
-	 std::string expected = std::string();
-	 std::string result = testUserHandler.updateUser(value);
+	 int id = 1;
+	 nlohmann::json value;
+	 int expected = 1;
+	 int result = testUserHandler.update(id, value);
 	if (expected == result) {
 		return "OK";
 	}
 	else {
-		return result;
+		return std::to_string(result);
 	}
 }
 

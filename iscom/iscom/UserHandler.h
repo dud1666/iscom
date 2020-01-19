@@ -4,6 +4,6 @@
 
 class UserHandler : public Handler
 {
-
+	std::string filename = "file/user.json";
 };
 

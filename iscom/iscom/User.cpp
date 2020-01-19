@@ -15,7 +15,7 @@ std::string User::removeFriend(std::string user_id)
 	return std::string();
 }
 
-std::string User::actualiseDescription(std::string description)
+std::string User::updateDescription(std::string description)
 {
 	return std::string();
 }

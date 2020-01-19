@@ -1,6 +1,6 @@
 #pragma once
 #include <string>
-#include "Group.h"
+
 class User
 {
 public:
@@ -12,7 +12,7 @@ public:
 	std::string createGroup();
 	std::string addFriend(std::string user_id);
 	std::string removeFriend(std::string user_id);
-	std::string actualiseDescription(std::string description);
+	std::string updateDescription(std::string description);
 
 
 };
