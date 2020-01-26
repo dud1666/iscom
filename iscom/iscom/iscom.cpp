@@ -41,7 +41,7 @@ void SetStdinEcho(bool enable = true)
 }
 
 
-
+/*
 void tests() {
 
 	Test test;
@@ -66,7 +66,7 @@ void tests() {
 	if (!test.testRemove()) {
 		std::cout << test.testRemove() << std::endl;
 	}
-	*/
+	
 	//testy dla metod z klasy MessageHandler
 
 	if (test.testGetMessageByDate() != "OK") {
@@ -118,37 +118,42 @@ void tests() {
 		std::cout << test.testUpdateUser() << std::endl;
 	}
 }
-
+*/
 int main()
 {
 	bool test = false;
 
-	if (test) {
-		tests();
-	}
+	//if (test) {
+	//	tests();
+	//}
 
 
     std::string login;
-  
-    std::cout << "Witaj w IsCom!\n";
-    std::cout << "Podaj login:\n";
-    std::cin >> login;
-
-    std::cout << "Podaj haslo:\n";
-    SetStdinEcho(false);
-
-    std::string password;
-    std::cin >> password;
-
-    SetStdinEcho(true);
-
+	std::string password;
 	User u = User();
-	UserHandler uh;
-	nlohmann::json j = { {"name","admin"},{"password","admin1"} };
-	
-	uh.add(j);
 
-	u.login(login, password);
+	std::cout << "Witaj w IsCom!\n";
+
+	while (CURRENT_USER == -1) {
+
+		
+		std::cout << "Podaj login:\n";
+		std::cin >> login;
+		std::cout << "Podaj haslo:\n";
+		
+		SetStdinEcho(false);
+		std::cin >> password;
+		SetStdinEcho(true);
+
+		u.login(login, password);
+		if (CURRENT_USER == -1) {
+			std::cout << "Niepoprawny login i haslo, sprobuj jeszcze raz \n";
+		}
+		else {
+			std::cout << "Zalogowano poprawnie, Czesc " << login << "!" << std::endl;
+		}
+	}
+	
 	std::cout << CURRENT_USER;
 	
     return 0;

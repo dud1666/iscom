@@ -1,11 +1,11 @@
 #include "Admin.h"
 
-int Admin::addMod(std::string mod_id)
+User Admin::addMod(int mod_id)
 {
-	return 0;
+	return User();
 }
 
-int Admin::removeMod(std::string mod_id)
+User Admin::removeMod(int mod_id)
 {
-	return 0;
+	return User();
 }
