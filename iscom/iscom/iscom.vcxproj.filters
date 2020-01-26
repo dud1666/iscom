@@ -54,12 +54,9 @@
     <ClCompile Include="Test.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
-<<<<<<< HEAD
-=======
     <ClCompile Include="ViewHandler.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
->>>>>>> 62dee642e6883de523bb42b54262f5190f25e61a
     <ClCompile Include="Views.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
@@ -107,12 +104,9 @@
     <ClInclude Include="CurrentUser.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
-<<<<<<< HEAD
-=======
     <ClInclude Include="ViewHandler.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
->>>>>>> 62dee642e6883de523bb42b54262f5190f25e61a
     <ClInclude Include="Views.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>

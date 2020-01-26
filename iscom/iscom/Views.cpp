@@ -1,11 +1,9 @@
 #include <iostream>
 #include "Views.h"
-#include "Core.h"
 
 int password; //has³o u¿ytkownika
 int choice; //przechowuje wybór u¿ytkownika w menu
 std::string message; // wiadomosc u¿ytkownika chocia¿ pewnie inaczej to rozwi¹¿emy
-
 
 void View::login()
 {
@@ -15,7 +13,7 @@ void View::login()
 
 void View::dashboard()
 {
-	std::cout << "1 - wyœwietl grupy"<<std::endl;
+	std::cout << "1 - wyœwietl grupy";
 	std::cout << "2 - ustawienia";
 	std::cin >> choice;
 
@@ -38,17 +36,7 @@ void View::dashboard()
 
 void View::groupList()
 {
-	GroupHandler gh;
-	nlohmann::json groups = gh.get();
 
-	for (const auto& item : groups.items())
-	{
-		std::cout << item.key() << "\n";
-		for (const auto& val : item.value().items())
-		{
-			std::cout << "  " << val.key() << ": " << val.value() << "\n";
-		}
-	}
 }
 
 void View::options()

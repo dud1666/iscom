@@ -17,6 +17,4 @@
 #include "Picture.h"
 #include "ViewHandler.h"
 
-#include "Views.h"
-
 extern int CURRENT_USER;

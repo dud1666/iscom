@@ -160,10 +160,7 @@
     <ClCompile Include="Test.cpp" />
     <ClCompile Include="User.cpp" />
     <ClCompile Include="UserHandler.cpp" />
-<<<<<<< HEAD
-=======
     <ClCompile Include="ViewHandler.cpp" />
->>>>>>> 62dee642e6883de523bb42b54262f5190f25e61a
     <ClCompile Include="Views.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -181,10 +178,7 @@
     <ClInclude Include="Test.h" />
     <ClInclude Include="User.h" />
     <ClInclude Include="UserHandler.h" />
-<<<<<<< HEAD
-=======
     <ClInclude Include="ViewHandler.h" />
->>>>>>> 62dee642e6883de523bb42b54262f5190f25e61a
     <ClInclude Include="Views.h" />
   </ItemGroup>
   <ItemGroup>
