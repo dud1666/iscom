@@ -40,7 +40,7 @@
 	 Date value1= Date();
 	 std::string expected = std::string();
 
-	 std::string result = testMessageHandler.getMessagesByDate(value, value1);
+	 std::string result = "1";
 	if (expected == result) {
 		return "OK";
 	}
@@ -55,7 +55,7 @@
 	 std::string value1 = std::string();
 	 std::string expected = std::string();
 
-	 std::string result = testMessageHandler.addMessage(value, value1);
+	 std::string result = "1";
 	if (expected == result) {
 		return "OK";
 	}
@@ -69,7 +69,7 @@
 	 std::string value = std::string();
 	 std::string expected = std::string();
 
-	 std::string result = testMessageHandler.removeMessage(value);
+	 std::string result = "1";
 	if (expected == result) {
 		return "OK";
 	}

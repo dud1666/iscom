@@ -4,6 +4,7 @@
 #include <iterator>
 #include <algorithm>
 Handler::Handler() {
+	filename = "file/dump.json";
 }
 
 int Handler::add(nlohmann::json values) {
@@ -25,7 +26,7 @@ int Handler::add(nlohmann::json values) {
 		}
 
 		auto e = j.end();
-		e--;
+		e = e-1;
 		int last =  std::stoi(e.key());
 		last += 1;
 		std::string last_str = std::to_string(last);

@@ -1,7 +1,6 @@
 #include "User.h"
 #include "UserHandler.h"
 #include "nlohmann/json.hpp"
-#include <iostream>
 extern int CURRENT_USER;
 std::string User::createGroup()
 {
@@ -30,7 +29,6 @@ int User::login(std::string name, std::string password) {
 	for (auto& el : ul.items())
 	{
 		nlohmann::json u = el.value();
-		std::cout << u << std::endl;
 		if ((name == u["name"].get<std::string>()) && (password == u["password"].get<std::string>()))
 		{
 			CURRENT_USER = std::stoi(el.key());

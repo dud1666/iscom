@@ -6,7 +6,7 @@
 class Handler
 {
 public:
-	std::string filename = "file/dump.json";
+	std::string filename;
 	std::fstream file;
 
 	nlohmann::json get(int id);
