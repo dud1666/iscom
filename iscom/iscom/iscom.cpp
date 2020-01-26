@@ -156,7 +156,7 @@ int main()
 	
 	std::cout << CURRENT_USER;
 	ViewHandler vh;
-	 vh.displayUser(CURRENT_USER);
+	vh.displayUser(CURRENT_USER);
     return 0;
 
 }

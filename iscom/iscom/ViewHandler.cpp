@@ -6,7 +6,6 @@ void ViewHandler::displayUser(int id)
 {
 	UserHandler uh;
 	//std::cout << uh.get(id) << std::endl;
-	return false;
 }
 
 bool ViewHandler::displayGroup(int id)

@@ -8,5 +8,4 @@ class View {
 	void	groupList();
 	void	singlegroup();
 	void	options();
-	void
 };
