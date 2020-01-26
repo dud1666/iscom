@@ -5,5 +5,8 @@ class View {
 
 	void	login();
 	void	dashboard();
-	void	specyficgroup();
+	void	groupList();
+	void	singlegroup();
+	void	options();
+	void
 };

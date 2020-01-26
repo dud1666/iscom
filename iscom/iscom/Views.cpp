@@ -22,19 +22,31 @@ void View::dashboard()
 
 	case 1:
 		{
-
+		groupList();
 		}
 
 	case 2:
 		{
-
+		options();
 		}
 
 
 	}
 }
 
-void View::specyficgroup()
+void View::groupList()
+{
+
+}
+
+void View::options()
+{
+
+}
+
+
+
+/*void View::singlegroup()
 {
 	std::cout << "przegl¹dasz grupê: " << std::endl; //tutaj podanie nazwy otwartej grupy
 	std::cout << "Ostatnio otwierana: " << std::endl; //data kiedy ostatnio grupa by³a przegl¹dana je¿eli przechowujemy
@@ -42,4 +54,4 @@ void View::specyficgroup()
 
 	std::cout << "Napisz wiadomoœæ: " << std::endl;
 	std::cin >> message;
-}
+}*/
