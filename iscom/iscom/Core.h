@@ -16,4 +16,6 @@
 #include "Message.h"
 #include "Picture.h"
 
+#include "Views.h"
+
 extern int CURRENT_USER;
