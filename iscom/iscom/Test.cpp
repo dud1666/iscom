@@ -31,29 +31,6 @@
 	}
 }
 
-
-//metody dla klasy MessageHandler
-
- std::string Test::testGetMessageByDate() {
-	 MessageHandler testMessageHandler;
-	 Date value = Date();
-	 Date value1= Date();
-	 std::string expected = std::string();
-
-	 std::string result = testMessageHandler.getMessagesByDate(value, value1);
-	if (expected == result) {
-		return "OK";
-	}
-	else {
-		return result;
-	}
-}
-
-
-
-
-
-
 //metody dla klasy Mod
 
  std::string Test::testChangeGroupName() {
