@@ -121,6 +121,11 @@ void tests() {
 */
 int main()
 {
+	HANDLE hOut;
+	hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(hOut, 15);
+
+
 	bool test = false;
 
 	//if (test) {
@@ -133,6 +138,12 @@ int main()
 	User u = User();
 
 	std::cout << "Witaj w IsCom!\n";
+
+	ViewHandler hg;
+	hg.displayGroup(0);
+	hg.displayMessage(0);
+	hg.displayAdmin(0);
+	hg.displayMod(0);
 
 	while (CURRENT_USER == -1) {
 
@@ -154,7 +165,7 @@ int main()
 		}
 	}
 	
-	std::cout << CURRENT_USER;
+	std::cout << CURRENT_USER<<std::endl;
 	ViewHandler vh;
 	vh.displayUser(CURRENT_USER);
     return 0;
