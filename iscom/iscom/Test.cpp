@@ -4,8 +4,8 @@
 //metody dla klasy Admin
 
  std::string Test::testAddMod(){
-	std::string value = "0";
-	std::string expected = "0";
+	int value = 0;
+	int expected = 0;
 	Admin testAdmin;
 
 	std::string result = testAdmin.addMod(value);
@@ -18,8 +18,8 @@
 }
 
  std::string Test::testRemoveMod() {
-	 std::string value = "0";
-	 std::string expected = "0";
+	 int value = 0;
+	 int expected = 0;
 	 Admin testAdmin;
 
 	 std::string result = testAdmin.removeMod(value);
@@ -116,7 +116,7 @@
 	 std::string value = std::string();
 	 std::string value1 = std::string();
 	 std::string expected = std::string();
-	 std::string result = testMod.removeUser(value, value1);
+	 std::string result = testMod.removeUserFromGroup(value, value1);
 	if (expected == result) {
 		return "OK";
 	}
@@ -130,8 +130,8 @@
 
  std::string Test::testCreateGroup() {
 	 User testUser;
-	 std::string expected = std::string();
-	 std::string result = testUser.createGroup();
+	 int expected = 0;
+	 int result = testUser.createGroup();
 	if (expected == result) {
 		return "OK";
 	}else {
@@ -141,9 +141,9 @@
 
  std::string Test::testAddFriend() {
 	 User testUser;
-	 std::string value = std::string();
-	 std::string expected = std::string();
-	 std::string result = testUser.addFriend(value);
+	 int value = 0;
+	 int expected = 0;
+	 int result = testUser.addFriend(value);
 	if (expected == result) {
 		return "OK";
 	}
@@ -154,9 +154,9 @@
 
  std::string Test::testRemoveFriend() {
 	 User testUser;
-	 std::string value = std::string();
-	 std::string expected = std::string();
-	 std::string result = testUser.removeFriend(value);
+	 int value = 0;
+	 int expected = 0;
+	 int result = testUser.removeFriend(value);
 	if (expected == result) {
 		return "OK";
 	}

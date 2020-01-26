@@ -3,24 +3,24 @@
 #include "nlohmann/json.hpp"
 #include <iostream>
 extern int CURRENT_USER;
-std::string User::createGroup()
+int User::createGroup()
 {
-	return std::string();
+	return 0;
 }
 
-std::string User::addFriend(std::string user_id)
+int User::addFriend(std::string user_id)
 {
-	return std::string();
+	return 0;
 }
 
-std::string User::removeFriend(std::string user_id)
+int User::removeFriend(std::string user_id)
 {
-	return std::string();
+	return 0;
 }
 
-std::string User::updateDescription(std::string description)
+int User::updateDescription(std::string description)
 {
-	return std::string();
+	return 0;
 }
 
 int User::login(std::string name, std::string password) {

@@ -5,9 +5,9 @@ class Mod :
 	public User
 {
 public:
-	std::string changeGroupName(std::string groupName, std::string groupId);
-	std::string addUser(std::string id_user, std::string groupId);
-	std::string removeUser(std::string id_user, std::string groupId);
+	int changeGroupName(std::string groupName, int groupId);
+	User addUser(int id_user, int groupId);
+	User removeUserFromGroup(int id_user, int groupId);
 
 };
 
