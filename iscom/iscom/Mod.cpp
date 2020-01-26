@@ -1,16 +1,18 @@
 #include "Mod.h"
 
-std::string Mod::changeGroupName(std::string groupName, std::string groupId)
+
+
+int Mod::updateGroupName(std::string groupName, int groupId)
 {
-	return std::string();
+	return 0;
 }
 
-std::string Mod::addUser(std::string id_user, std::string groupId)
+User Mod::addUser(int id_user, int groupId)
 {
-	return std::string();
+	return User();
 }
 
-std::string Mod::removeUser(std::string id_user, std::string groupId)
+User Mod::removeUserFromGroup(int id_user, int groupId)
 {
-	return std::string();
+	return User();
 }

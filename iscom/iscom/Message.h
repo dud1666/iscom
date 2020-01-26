@@ -5,12 +5,13 @@
 class Message
 {
 public:
-	std::string message_id;
+	long message_id;
 	std::string content;
-	std::string group_id;
-	std::string sender_id;
+	int group_id;
+	int sender_id;
 	Date date;
-	int number_of_message;
+
+	int saveMessage();
 
 };
 
