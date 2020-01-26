@@ -2,7 +2,7 @@
 
 
 class View {
-
+public:
 	void	login();
 	void	dashboard();
 	void	groupList();

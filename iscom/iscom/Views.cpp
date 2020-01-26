@@ -1,5 +1,9 @@
 #include <iostream>
 #include "Views.h"
+#include "Core.h"
+#include <vector>
+
+std::vector<int> wektor1 = {0, 1, 2};
 
 int password; //has³o u¿ytkownika
 int choice; //przechowuje wybór u¿ytkownika w menu
@@ -13,8 +17,8 @@ void View::login()
 
 void View::dashboard()
 {
-	std::cout << "1 - wyœwietl grupy";
-	std::cout << "2 - ustawienia";
+	std::cout << "1 - wyswietl grupy"<<std::endl;
+	std::cout << "2 - ustawienia"<< std::endl;;
 	std::cin >> choice;
 
 	switch (choice)
@@ -36,7 +40,10 @@ void View::dashboard()
 
 void View::groupList()
 {
-
+	for (std::vector<int>::size_type i = 0; i != wektor1.size(); i++)
+	{
+		std::cout << wektor1[i]<<std::endl;
+	};
 }
 
 void View::options()
