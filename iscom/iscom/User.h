@@ -4,7 +4,7 @@ class User
 {
 public:
 	int id;
-	std::string login;
+	std::string name;
 	std::string password;
 	std::string description;
 
