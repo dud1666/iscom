@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 ﻿  iscom.vcxproj -> C:\Users\user\Documents\iscom\iscom\Debug\iscom.exe
+=======
+﻿  iscom.cpp
+  iscom.vcxproj -> C:\dev\iscom\iscom\Debug\iscom.exe
+>>>>>>> 62dee642e6883de523bb42b54262f5190f25e61a

@@ -15,6 +15,7 @@
 
 #include "Message.h"
 #include "Picture.h"
+#include "ViewHandler.h"
 
 #include "Views.h"
 
