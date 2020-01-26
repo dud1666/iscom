@@ -41,7 +41,7 @@ void SetStdinEcho(bool enable = true)
 }
 
 
-
+/*
 void tests() {
 
 	Test test;
@@ -66,7 +66,7 @@ void tests() {
 	if (!test.testRemove()) {
 		std::cout << test.testRemove() << std::endl;
 	}
-	*/
+	
 	//testy dla metod z klasy MessageHandler
 
 	if (test.testGetMessageByDate() != "OK") {
@@ -118,14 +118,14 @@ void tests() {
 		std::cout << test.testUpdateUser() << std::endl;
 	}
 }
-
+*/
 int main()
 {
 	bool test = false;
 
-	if (test) {
-		tests();
-	}
+	//if (test) {
+	//	tests();
+	//}
 
 
     std::string login;

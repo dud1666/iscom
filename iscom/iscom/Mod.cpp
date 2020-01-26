@@ -2,7 +2,7 @@
 
 
 
-int Mod::changeGroupName(std::string groupName, int groupId)
+int Mod::updateGroupName(std::string groupName, int groupId)
 {
 	return 0;
 }

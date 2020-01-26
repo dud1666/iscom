@@ -8,15 +8,7 @@ int User::createGroup()
 	return 0;
 }
 
-int User::addFriend(std::string user_id)
-{
-	return 0;
-}
 
-int User::removeFriend(std::string user_id)
-{
-	return 0;
-}
 
 int User::updateDescription(std::string description)
 {

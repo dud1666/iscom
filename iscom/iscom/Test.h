@@ -18,8 +18,8 @@ public:
 	//metody dla klasy MessageHandler
 
 	 std::string testGetMessageByDate() ;
-	 std::string testAddMessage() ;
-	 std::string testRemoveMessage() ;
+	// std::string testAddMessage() ;
+	// std::string testRemoveMessage() ;
 
 
 	//metody dla klasy Mod
@@ -32,9 +32,7 @@ public:
 	//metody dla klasy User
 
 	 std::string testCreateGroup() ;
-	 std::string testAddFriend() ;
-	 std::string testRemoveFriend() ;
-	 std::string testActualiseDescription() ;
+	 std::string testUpdateDescription() ;
 
 
 	//metody dla klasy UserHandler
