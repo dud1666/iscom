@@ -1,1 +1,17 @@
-{"0":{"name":"jakub","password":"gawron"},"1":{"name":"jakub","password":"gawron"},"2":{"name":"jakub","password":"gawron"}}
+{
+  "0": {
+    "name": "jakub",
+    "password": "gawron",
+    "description": "czesc jestem kuba"
+  },
+  "1": {
+    "name": "pawel",
+    "password": "duda",
+    "description": "czesc jestem pawel"
+  },
+  "2": {
+    "name": "szymon",
+    "password": "czekaj",
+    "description": "czesc jestem szymon"
+  }
+}

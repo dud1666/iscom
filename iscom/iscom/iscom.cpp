@@ -41,7 +41,7 @@ void SetStdinEcho(bool enable = true)
 }
 
 
-/*
+
 void tests() {
 
 	Test test;
@@ -55,30 +55,7 @@ void tests() {
 		std::cout << test.testRemoveMod() << std::endl;
 	}
 
-	//testy dla metod z klasy Handler
-	/*
-	if (!test.testGet()) {
-		std::cout << test.testGet() << std::endl;
-	}
-	if (!test.testAdd()) {
-		std::cout << test.testAdd() << std::endl;
-	}
-	if (!test.testRemove()) {
-		std::cout << test.testRemove() << std::endl;
-	}
 	
-	//testy dla metod z klasy MessageHandler
-
-	if (test.testGetMessageByDate() != "OK") {
-		std::cout << test.testGetMessageByDate() << std::endl;
-	}
-	if (test.testAddMessage() != "OK") {
-		std::cout << test.testAddMessage() << std::endl;
-	}
-	if (test.testRemoveMessage() != "OK") {
-		std::cout << test.testRemoveMessage() << std::endl;
-	}
-
 	//testy dla metod z klasy Mod
 
 	if (test.testChangeGroupName() != "OK") {
@@ -96,29 +73,24 @@ void tests() {
 	if (test.testCreateGroup() != "OK") {
 		std::cout << test.testCreateGroup() << std::endl;
 	}
-	if (test.testAddFriend() != "OK") {
-		std::cout << test.testAddFriend() << std::endl;
-	}
-	if (test.testRemoveFriend() != "OK") {
-		std::cout << test.testRemoveFriend() << std::endl;
-	}
-	if (test.testActualiseDescription() != "OK") {
-		std::cout << test.testActualiseDescription() << std::endl;
+	if (test.testUpdateDescription() != "OK") {
+		std::cout << test.testUpdateDescription() << std::endl;
 	}
 	
-	//testy dla metod z klasy UserHandler
+	//testy dla metod z klas Handler
 
 	if (test.testGetUser() != "OK") {
 		std::cout << test.testGetUser() << std::endl;
 	}
-	if (test.testHandlerRemoveUser() != "OK") {
-		std::cout << test.testHandlerRemoveUser() << std::endl;
+	if (test.testGetGroup() != "OK") {
+		std::cout << test.testGetGroup() << std::endl;
 	}
-	if (test.testUpdateUser() != "OK") {
-		std::cout << test.testUpdateUser() << std::endl;
+	if (test.testGetMessage() != "OK") {
+		std::cout << test.testGetMessage() << std::endl;
 	}
+	
 }
-*/
+
 int main()
 {
 	HANDLE hOut;
@@ -126,11 +98,11 @@ int main()
 	SetConsoleTextAttribute(hOut, 15);
 
 
-	bool test = false;
+	bool test = true;
 
-	//if (test) {
-	//	tests();
-	//}
+	if (test) {
+		tests();
+	}
 
 
     std::string login;
@@ -139,11 +111,11 @@ int main()
 
 	std::cout << "Witaj w IsCom!\n";
 
-	ViewHandler hg;
-	hg.displayGroup(0);
-	hg.displayMessage(0);
-	hg.displayAdmin(0);
-	hg.displayMod(0);
+	//ViewHandler hg;
+	//hg.displayGroup(0);
+	//hg.displayMessage(0);
+	//hg.displayAdmin(0);
+	//hg.displayMod(0);
 
 	while (CURRENT_USER == -1) {
 

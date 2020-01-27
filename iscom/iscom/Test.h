@@ -9,18 +9,6 @@ public:
 	std::string testAddMod() ;
 	std::string testRemoveMod() ;
 
-	//metody dla klasy Handler
-	/*
-	 std::string testGet() ;
-	 std::string testAdd() ;
-	 std::string testRemove() ;
-	 */
-	//metody dla klasy MessageHandler
-
-	 std::string testGetMessageByDate() ;
-	// std::string testAddMessage() ;
-	// std::string testRemoveMessage() ;
-
 
 	//metody dla klasy Mod
 
@@ -35,10 +23,13 @@ public:
 	 std::string testUpdateDescription() ;
 
 
-	//metody dla klasy UserHandler
+	//metody dla klas Handler
+
 	 std::string testGetUser() ;
-	 std::string testHandlerRemoveUser() ;
-	 std::string testUpdateUser() ;
+	 std::string testGetMessage();
+	 std::string testGetGroup();
+	 //std::string testHandlerRemoveUser() ;
+	 //std::string testUpdateUser() ;
 
 
 };

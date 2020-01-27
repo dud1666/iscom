@@ -1,1 +1,8 @@
-{"0":{"currency":"msg","value":42.99},"1":{"currency":"USD","value":42.99},"2":{"currency":"USD","jan":"pawel","value":2137}}
+{
+  "0": {
+    "content": "msg",
+    "group": 42.99,
+    "sender_id": 0,
+    "date": "19-01-2020 18:30:27:01"
+  }
+}
