@@ -49,9 +49,12 @@ void tests() {
 	//testy dla metod z klasy Admin
 
 	if (test.testAddMod() != "OK") {
+		std::cout << "addMod test:" << std::endl;
 		std::cout << test.testAddMod() << std::endl;
 	}
 	if (test.testRemoveMod() != "OK") {
+		std::cout << "removeMod test:" << std::endl;
+
 		std::cout << test.testRemoveMod() << std::endl;
 	}
 
@@ -59,33 +62,49 @@ void tests() {
 	//testy dla metod z klasy Mod
 
 	if (test.testChangeGroupName() != "OK") {
+		std::cout << "changeGroupName test:" << std::endl;
+
 		std::cout << test.testChangeGroupName() << std::endl;
 	}
 	if (test.testAddUser() != "OK") {
+		std::cout << "addUser test:" << std::endl;
+
 		std::cout << test.testAddUser() << std::endl;
 	}
 	if (test.testModRemoveUser() != "OK") {
+		std::cout << "removeUser test:" << std::endl;
+
 		std::cout << test.testModRemoveUser() << std::endl;
 	}
 
 	//testy dla metod z klasy User
 
 	if (test.testCreateGroup() != "OK") {
+		std::cout << "createGropu test:" << std::endl;
+
 		std::cout << test.testCreateGroup() << std::endl;
 	}
 	if (test.testUpdateDescription() != "OK") {
+		std::cout << "updateDescr test:" << std::endl;
+
 		std::cout << test.testUpdateDescription() << std::endl;
 	}
 	
 	//testy dla metod z klas Handler
 
 	if (test.testGetUser() != "OK") {
+		std::cout << "getUser test:" << std::endl;
+
 		std::cout << test.testGetUser() << std::endl;
 	}
 	if (test.testGetGroup() != "OK") {
+		std::cout << "getGropu test:" << std::endl;
+
 		std::cout << test.testGetGroup() << std::endl;
 	}
 	if (test.testGetMessage() != "OK") {
+		std::cout << "getMessage test:" << std::endl;
+
 		std::cout << test.testGetMessage() << std::endl;
 	}
 	
@@ -98,7 +117,7 @@ int main()
 	SetConsoleTextAttribute(hOut, 15);
 
 
-	bool test = true;
+	bool test = false;
 
 	if (test) {
 		tests();
@@ -110,12 +129,6 @@ int main()
 	User u = User();
 
 	std::cout << "Witaj w IsCom!\n";
-
-	//ViewHandler hg;
-	//hg.displayGroup(0);
-	//hg.displayMessage(0);
-	//hg.displayAdmin(0);
-	//hg.displayMod(0);
 
 	while (CURRENT_USER == -1) {
 
@@ -137,7 +150,6 @@ int main()
 		}
 	}
 	
-	std::cout << CURRENT_USER<<std::endl;
 	ViewHandler vh;
 	vh.displayUser(CURRENT_USER);
     return 0;
