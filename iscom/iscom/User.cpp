@@ -30,4 +30,17 @@ int User::login(std::string name, std::string password) {
 	}
 	return -1;
 
-};
+}
+User::User()
+{
+}
+User::User(int id)
+{
+	this->id = id;
+	UserHandler uh;
+	nlohmann::json a = uh.get(id);
+	name = a["name"].get<std::string>();
+	password = a["password"].get<std::string>();
+	description = a["description"].get<std::string>();
+}
+;

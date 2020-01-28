@@ -13,6 +13,9 @@ public:
 	int updateDescription(std::string description);
 
 	int login(std::string name, std::string password);
+
+	User();
+	User(int id);
 };
 
 
