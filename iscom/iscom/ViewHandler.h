@@ -3,10 +3,10 @@
 class ViewHandler {
 public:
 	void displayUser(int id);
-	bool displayGroup(int id);
-	bool displayAdmin(int id);
-	bool displayMod(int id);
-	bool displayMessage(int id);	
+	void displayGroup(int id);
+	void displayAdmin(int id);
+	void displayMod(int id);
+	void displayMessage(int id);	
 
 	ViewHandler();
 };

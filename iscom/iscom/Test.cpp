@@ -107,6 +107,45 @@
 
 
 
+ std::string Test::testGetUser() {
+	 int value = 0;
+	UserHandler testUserHandler;
+	std::string expected = "jakub";
+	nlohmann::json result = testUserHandler.get(value);
+	if (expected == result["name"].get<std::string>()) {
+		return "OK";
+	}
+	else {
+		return result["name"].get<std::string>();
+	}
+ }
+
+ std::string Test::testGetMessage() {
+	 int value = 0;
+	 MessageHandler testMessageHandler;
+	 std::string expected = "pierwsza wiadomosc elo";
+	 nlohmann::json result = testMessageHandler.get(value);
+	 if (expected == result["content"].get<std::string>()) {
+		 return "OK";
+	 }
+	 else {
+		 return  result["content"].get<std::string>();
+	 }
+ }
+
+ std::string Test::testGetGroup() {
+	 int value = 0;
+	 GroupHandler testGroupHandler;
+	 std::string expected = "Grupa dyskusyjna";
+	 nlohmann::json result = testGroupHandler.get(value);
+	 if (expected == result["name"].get<std::string>()) {
+		 return "OK";
+	 }
+	 else {
+		 return result["name"].get<std::string>();
+	 }
+ }
+
 
 //metody dla klasy UserHandler
  /*

@@ -20,6 +20,7 @@ Group::Group(int id) {
 	name = a["name"].get<std::string>();
 	admin_id = a["admin_id"].get<std::vector<int>>();
 	mod_id = a["mod_id"].get<std::vector<int>>();
+	user_id = a["user_id"].get<std::vector<int>>();
 
 }
 Group::Group(std::string name) {

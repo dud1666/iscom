@@ -1,31 +1,123 @@
 
 #include "ViewHandler.h"
+#include <windows.h>
 #include "Core.h"
 #include <iostream>
+#include <cstdlib>
 void ViewHandler::displayUser(int id)
 {
 	UserHandler uh;
-	//std::cout << uh.get(id) << std::endl;
+	HANDLE hOut;
+	hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+	//std::cout << id << std::endl;
+	std::cout << std::endl;
+	SetConsoleTextAttribute(hOut, 9);
+	std::cout << uh.get(id)["name"].get<std::string>() << std::endl;
+	SetConsoleTextAttribute(hOut, 6);
+	std::cout << uh.get(id)["description"].get<std::string>() << std::endl;
+	std::cout << std::endl;
+	SetConsoleTextAttribute(hOut, 15);
 }
 
-bool ViewHandler::displayGroup(int id)
+void ViewHandler::displayGroup(int id)
 {
-	return false;
+	Group grupa(id);
+
+	HANDLE hOut;
+	UserHandler uh;
+
+	hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(hOut, 3);
+	std::cout << grupa.name << std::endl;
+
+	
+	
+
+	SetConsoleTextAttribute(hOut, 15);
+	std::cout << "Admini: ";
+	
+	for (int i = 0; i < grupa.admin_id.size(); i++) {
+		SetConsoleTextAttribute(hOut, 14);
+		std::cout << uh.get(grupa.mod_id[i])["name"].get<std::string>();
+		SetConsoleTextAttribute(hOut, 15);
+		std::cout << ", ";
+	}
+	std::cout << std::endl;
+	SetConsoleTextAttribute(hOut, 15);
+	std::cout << "Moderatorzy: ";
+	
+	for (int i = 0; i < grupa.mod_id.size(); i++) {
+		SetConsoleTextAttribute(hOut, 14);
+		std::cout << uh.get(grupa.mod_id[i])["name"].get<std::string>();
+		SetConsoleTextAttribute(hOut, 15);
+		std::cout << ", ";
+	}
+	std::cout << std::endl;
+	SetConsoleTextAttribute(hOut, 15);
+
+	std::cout << "Uzytkownicy: ";
+	
+	for (int i = 0; i < grupa.user_id.size(); i++) {
+		SetConsoleTextAttribute(hOut, 14);
+		std::cout << uh.get(grupa.user_id[i])["name"].get<std::string>();
+		SetConsoleTextAttribute(hOut, 15);
+		std::cout << ", ";
+	}
+	std::cout << std::endl;
+	
 }
 
-bool ViewHandler::displayAdmin(int id)
+void ViewHandler::displayAdmin(int id)
 {
-	return false;
+	UserHandler uh;
+	HANDLE hOut;
+	hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+	//std::cout << id << std::endl;
+	std::cout << std::endl;
+	SetConsoleTextAttribute(hOut, 15);
+	std::cout << "Admin: ";
+	SetConsoleTextAttribute(hOut, 13);
+	std::cout << uh.get(id)["name"].get<std::string>() << std::endl;
+	SetConsoleTextAttribute(hOut, 15);
+	std::cout << uh.get(id)["description"].get<std::string>() << std::endl;
+	std::cout << std::endl;
 }
 
-bool ViewHandler::displayMod(int id)
+void ViewHandler::displayMod(int id)
 {
-	return false;
+	UserHandler uh;
+	HANDLE hOut;
+	hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+	//std::cout << id << std::endl;
+	std::cout << std::endl; 
+	SetConsoleTextAttribute(hOut, 15);
+	std::cout << "Mod: ";
+	SetConsoleTextAttribute(hOut, 11);
+	std::cout << uh.get(id)["name"].get<std::string>() << std::endl;
+	SetConsoleTextAttribute(hOut, 15);
+	std::cout << uh.get(id)["description"].get<std::string>() << std::endl;
+	std::cout << std::endl;
 }
 
-bool ViewHandler::displayMessage(int id)
+void ViewHandler::displayMessage(int id)
 {
-	return false;
+	
+	MessageHandler mh;
+	UserHandler uh;
+	GroupHandler gh;
+	HANDLE hOut;
+	hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+	//Group grupa(mh.get(id)["group"]);
+
+	std::cout << std::endl;
+	SetConsoleTextAttribute(hOut, 15);
+	std::cout << mh.get(id)["date"].get<std::string>() << " ";
+	SetConsoleTextAttribute(hOut, 9);
+	std::cout << uh.get(mh.get(id)["sender_id"])["name"].get<std::string>() << " ";// << " > ";
+	SetConsoleTextAttribute(hOut, 15);
+	//std::cout << grupa.name << " ";
+	std::cout << mh.get(id)["content"].get<std::string>() << " " << std::endl;
+	SetConsoleTextAttribute(hOut, 15);
 }
 
 ViewHandler::ViewHandler()
